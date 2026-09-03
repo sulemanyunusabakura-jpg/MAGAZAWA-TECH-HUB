@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://sulemanyunusabakura-jpg.github.io/MAGAZAWA-TECH-HUB/sitemap.xml
