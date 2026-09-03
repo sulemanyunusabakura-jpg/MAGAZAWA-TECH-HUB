@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Quiz Buzzer System |
+        MAGAZAWA TECH HUB
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            MAGAZAWA TECH HUB
+        </div>
+
+        <nav>
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../projects.html">
+                Projects
+            </a>
+
+            <a href="../tutorials.html">
+                Tutorials
+            </a>
+
+            <a href="../courses.html">
+                Courses
+            </a>
+
+            <a href="../services.html">
+                Services
+            </a>
+
+            <a href="../contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PROJECT HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <h1>
+            Quiz Buzzer System
+        </h1>
+
+        <p>
+            Arduino-based electronic quiz buzzer
+            system for competitions and educational activities.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECT DETAILS
+    ========================== -->
+
+    <main class="project-details">
+
+
+        <!-- PROJECT OVERVIEW -->
+
+        <section class="detail-section">
+
+            <h2>
+                Project Overview
+            </h2>
+
+            <p>
+                The Quiz Buzzer System is an electronic
+                system designed to determine which participant
+                presses a quiz button first.
+            </p>
+
+            <p>
+                The system uses an Arduino microcontroller,
+                push buttons, LEDs, a buzzer and a display
+                to provide a simple and effective quiz
+                competition system.
+            </p>
+
+            <p>
+                When a participant presses their button,
+                the system identifies the first participant
+                and prevents the other participants from
+                activating the buzzer until the system is reset.
+            </p>
+
+        </section>
+
+
+        <!-- AIM -->
+
+        <section class="detail-section">
+
+            <h2>
+                Aim of the Project
+            </h2>
+
+            <p>
+                The aim of this project is to develop an
+                Arduino-based quiz buzzer system that can
+                identify the participant who responds first
+                during a quiz competition.
+            </p>
+
+        </section>
+
+
+        <!-- OBJECTIVES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Objectives
+            </h2>
+
+            <ul>
+
+                <li>
+                    Detect button presses from participants.
+                </li>
+
+                <li>
+                    Identify the first participant to respond.
+                </li>
+
+                <li>
+                    Activate an indicator for the winning participant.
+                </li>
+
+                <li>
+                    Produce an audible buzzer alert.
+                </li>
+
+                <li>
+                    Prevent other participants from responding
+                    after the first valid response.
+                </li>
+
+                <li>
+                    Provide a reset function for the next question.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- MAIN COMPONENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Main Components
+            </h2>
+
+            <ul>
+
+                <li>
+                    Arduino Uno
+                </li>
+
+                <li>
+                    Push buttons
+                </li>
+
+                <li>
+                    LEDs
+                </li>
+
+                <li>
+                    Buzzer
+                </li>
+
+                <li>
+                    Reset button
+                </li>
+
+                <li>
+                    Resistors
+                </li>
+
+                <li>
+                    Connecting wires
+                </li>
+
+                <li>
+                    LCD display (optional)
+                </li>
+
+                <li>
+                    Suitable power supply
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ARDUINO -->
+
+        <section class="detail-section">
+
+            <h2>
+                Arduino Uno
+            </h2>
+
+            <p>
+                The Arduino Uno acts as the main controller
+                of the quiz buzzer system.
+            </p>
+
+            <p>
+                It continuously monitors the participant
+                buttons and determines which button is
+                pressed first.
+            </p>
+
+            <p>
+                After detecting the first valid response,
+                the Arduino activates the corresponding
+                indicator and buzzer and ignores additional
+                participant inputs until the system is reset.
+            </p>
+
+        </section>
+
+
+        <!-- PUSH BUTTONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Participant Buttons
+            </h2>
+
+            <p>
+                Each participant is provided with a separate
+                push button.
+            </p>
+
+            <p>
+                When a participant presses their button,
+                the Arduino detects the input and determines
+                whether that participant was the first to respond.
+            </p>
+
+            <p>
+                Example:
+            </p>
+
+            <ul>
+
+                <li>
+                    Player 1 Button
+                </li>
+
+                <li>
+                    Player 2 Button
+                </li>
+
+                <li>
+                    Player 3 Button
+                </li>
+
+                <li>
+                    Player 4 Button
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- LED INDICATORS -->
+
+        <section class="detail-section">
+
+            <h2>
+                LED Indicators
+            </h2>
+
+            <p>
+                LEDs are used to indicate which participant
+                successfully pressed their button first.
+            </p>
+
+            <p>
+                For example, if Player 2 responds first,
+                the LED assigned to Player 2 can be switched on.
+            </p>
+
+        </section>
+
+
+        <!-- BUZZER -->
+
+        <section class="detail-section">
+
+            <h2>
+                Buzzer
+            </h2>
+
+            <p>
+                The buzzer provides an audible signal when
+                the first participant presses their button.
+            </p>
+
+            <p>
+                This allows the quiz moderator and
+                participants to immediately know that
+                a response has been detected.
+            </p>
+
+        </section>
+
+
+        <!-- RESET -->
+
+        <section class="detail-section">
+
+            <h2>
+                Reset Button
+            </h2>
+
+            <p>
+                After a participant has been identified,
+                the system remains locked until the reset
+                button is pressed.
+            </p>
+
+            <p>
+                Pressing the reset button clears the previous
+                winner and prepares the system for the next
+                quiz question.
+            </p>
+
+        </section>
+
+
+        <!-- DISPLAY -->
+
+        <section class="detail-section">
+
+            <h2>
+                Display Unit
+            </h2>
+
+            <p>
+                An LCD display can optionally be included
+                to provide information about the system.
+            </p>
+
+            <p>
+                The display may show messages such as:
+            </p>
+
+            <ul>
+
+                <li>
+                    READY
+                </li>
+
+                <li>
+                    PLAYER 1
+                </li>
+
+                <li>
+                    PLAYER 2
+                </li>
+
+                <li>
+                    PLAYER 3
+                </li>
+
+                <li>
+                    PLAYER 4
+                </li>
+
+                <li>
+                    PRESS RESET
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- WORKING PRINCIPLE -->
+
+        <section class="detail-section">
+
+            <h2>
+                How the System Works
+            </h2>
+
+            <p>
+                When the system is switched on, the Arduino
+                initializes all buttons, LEDs and the buzzer.
+            </p>
+
+            <p>
+                The system enters the ready state and waits
+                for a participant to press a button.
+            </p>
+
+            <p>
+                When the first button press is detected,
+                the Arduino records the corresponding
+                participant.
+            </p>
+
+            <p>
+                The Arduino then activates the participant's
+                LED and sounds the buzzer.
+            </p>
+
+            <p>
+                The remaining participant buttons are
+                temporarily ignored until the reset button
+                is pressed.
+            </p>
+
+            <p>
+                After reset, all participants can compete
+                again for the next question.
+            </p>
+
+        </section>
+
+
+        <!-- OPERATION SEQUENCE -->
+
+        <section class="detail-section">
+
+            <h2>
+                System Operation Sequence
+            </h2>
+
+            <ul>
+
+                <li>
+                    Switch on the system.
+                </li>
+
+                <li>
+                    Arduino initializes the system.
+                </li>
+
+                <li>
+                    LEDs are turned off.
+                </li>
+
+                <li>
+                    Buzzer remains inactive.
+                </li>
+
+                <li>
+                    System waits for a button press.
+                </li>
+
+                <li>
+                    First button press is detected.
+                </li>
+
+                <li>
+                    Arduino identifies the participant.
+                </li>
+
+                <li>
+                    Corresponding LED is activated.
+                </li>
+
+                <li>
+                    Buzzer produces an alert.
+                </li>
+
+                <li>
+                    Other participant buttons are locked.
+                </li>
+
+                <li>
+                    Moderator presses RESET.
+                </li>
+
+                <li>
+                    System becomes ready for the next question.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- EXAMPLE -->
+
+        <section class="detail-section">
+
+            <h2>
+                Example of Operation
+            </h2>
+
+            <p>
+                Assume four participants are competing:
+            </p>
+
+            <ul>
+
+                <li>
+                    Player 1
+                </li>
+
+                <li>
+                    Player 2
+                </li>
+
+                <li>
+                    Player 3
+                </li>
+
+                <li>
+                    Player 4
+                </li>
+
+            </ul>
+
+            <p>
+                If Player 3 presses the button first,
+                the Arduino detects Player 3's input.
+            </p>
+
+            <p>
+                The system switches on Player 3's LED
+                and activates the buzzer.
+            </p>
+
+            <p>
+                The other players cannot activate the
+                system until the moderator presses RESET.
+            </p>
+
+        </section>
+
+
+        <!-- APPLICATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Applications
+            </h2>
+
+            <ul>
+
+                <li>
+                    Quiz competitions
+                </li>
+
+                <li>
+                    Schools
+                </li>
+
+                <li>
+                    Universities
+                </li>
+
+                <li>
+                    Training centers
+                </li>
+
+                <li>
+                    Educational games
+                </li>
+
+                <li>
+                    Television-style quiz competitions
+                </li>
+
+                <li>
+                    Arduino demonstrations
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ADVANTAGES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Advantages
+            </h2>
+
+            <ul>
+
+                <li>
+                    Simple to operate.
+                </li>
+
+                <li>
+                    Provides quick response indication.
+                </li>
+
+                <li>
+                    Reduces disputes about who responded first.
+                </li>
+
+                <li>
+                    Can support multiple participants.
+                </li>
+
+                <li>
+                    Easy to expand.
+                </li>
+
+                <li>
+                    Useful for educational demonstrations.
+                </li>
+
+                <li>
+                    Relatively inexpensive to develop.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- LIMITATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Limitations
+            </h2>
+
+            <ul>
+
+                <li>
+                    The number of participants depends on
+                    available Arduino input pins.
+                </li>
+
+                <li>
+                    Mechanical buttons may experience
+                    contact bounce.
+                </li>
+
+                <li>
+                    The system requires a power supply.
+                </li>
+
+                <li>
+                    Physical wiring can become complex when
+                    many participants are added.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- FUTURE IMPROVEMENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Future Improvements
+            </h2>
+
+            <ul>
+
+                <li>
+                    Add a larger LCD display.
+                </li>
+
+                <li>
+                    Add wireless participant buttons.
+                </li>
+
+                <li>
+                    Add a countdown timer.
+                </li>
+
+                <li>
+                    Add score keeping.
+                </li>
+
+                <li>
+                    Add a larger number of participants.
+                </li>
+
+                <li>
+                    Add remote control reset.
+                </li>
+
+                <li>
+                    Add a mobile application.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+        <h2>
+            Want to Build This Project?
+        </h2>
+
+        <p>
+            Contact MAGAZAWA TECH HUB for
+            project guidance and technical support.
+        </p>
+
+        <a
+            href="../contact.html"
+            class="cta-button"
+        >
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MAGAZAWA TECH HUB.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            SULEMAN YUNUSA
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

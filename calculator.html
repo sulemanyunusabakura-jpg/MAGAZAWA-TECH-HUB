@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Arduino Calculator |
+        MAGAZAWA TECH HUB
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            MAGAZAWA TECH HUB
+        </div>
+
+        <nav>
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../projects.html">
+                Projects
+            </a>
+
+            <a href="../tutorials.html">
+                Tutorials
+            </a>
+
+            <a href="../courses.html">
+                Courses
+            </a>
+
+            <a href="../services.html">
+                Services
+            </a>
+
+            <a href="../contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PROJECT HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <h1>
+            Arduino Calculator
+        </h1>
+
+        <p>
+            A simple electronic calculator system
+            developed using an Arduino microcontroller.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECT DETAILS
+    ========================== -->
+
+    <main class="project-details">
+
+
+        <!-- PROJECT OVERVIEW -->
+
+        <section class="detail-section">
+
+            <h2>
+                Project Overview
+            </h2>
+
+            <p>
+                The Arduino Calculator is a simple
+                microcontroller-based electronic system
+                designed to perform basic mathematical
+                operations.
+            </p>
+
+            <p>
+                The system uses an Arduino microcontroller,
+                keypad and display to allow a user to enter
+                numbers and mathematical operators.
+            </p>
+
+            <p>
+                The Arduino processes the user's input,
+                performs the selected mathematical operation
+                and displays the result.
+            </p>
+
+        </section>
+
+
+        <!-- AIM -->
+
+        <section class="detail-section">
+
+            <h2>
+                Aim of the Project
+            </h2>
+
+            <p>
+                The aim of this project is to design an
+                Arduino-based calculator capable of
+                performing basic mathematical operations
+                and displaying the results to the user.
+            </p>
+
+        </section>
+
+
+        <!-- OBJECTIVES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Objectives
+            </h2>
+
+            <ul>
+
+                <li>
+                    Accept numerical input from a keypad.
+                </li>
+
+                <li>
+                    Detect mathematical operators.
+                </li>
+
+                <li>
+                    Perform basic arithmetic operations.
+                </li>
+
+                <li>
+                    Display the entered values and results.
+                </li>
+
+                <li>
+                    Provide a simple and user-friendly
+                    calculator interface.
+                </li>
+
+                <li>
+                    Demonstrate the use of Arduino in
+                    practical electronic applications.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- MAIN COMPONENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Main Components
+            </h2>
+
+            <ul>
+
+                <li>
+                    Arduino Uno
+                </li>
+
+                <li>
+                    4×4 or suitable matrix keypad
+                </li>
+
+                <li>
+                    16×2 LCD display
+                </li>
+
+                <li>
+                    10kΩ potentiometer for LCD contrast
+                </li>
+
+                <li>
+                    Connecting wires
+                </li>
+
+                <li>
+                    Resistors where required
+                </li>
+
+                <li>
+                    Suitable power supply
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ARDUINO -->
+
+        <section class="detail-section">
+
+            <h2>
+                Arduino Uno
+            </h2>
+
+            <p>
+                The Arduino Uno serves as the main
+                controller of the calculator.
+            </p>
+
+            <p>
+                It receives input from the keypad,
+                identifies the numbers and mathematical
+                operators, performs the required
+                calculation and sends the result to
+                the LCD display.
+            </p>
+
+        </section>
+
+
+        <!-- KEYPAD -->
+
+        <section class="detail-section">
+
+            <h2>
+                Keypad
+            </h2>
+
+            <p>
+                The keypad provides the interface through
+                which the user enters numbers and commands.
+            </p>
+
+            <p>
+                A typical keypad may contain numerical
+                keys together with mathematical operators.
+            </p>
+
+            <p>
+                Example keys include:
+            </p>
+
+            <ul>
+
+                <li>
+                    0 to 9
+                </li>
+
+                <li>
+                    Addition (+)
+                </li>
+
+                <li>
+                    Subtraction (-)
+                </li>
+
+                <li>
+                    Multiplication (*)
+                </li>
+
+                <li>
+                    Division (/)
+                </li>
+
+                <li>
+                    Clear (C)
+                </li>
+
+                <li>
+                    Equals (=)
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- LCD -->
+
+        <section class="detail-section">
+
+            <h2>
+                16×2 LCD Display
+            </h2>
+
+            <p>
+                The LCD display provides visual feedback
+                to the user.
+            </p>
+
+            <p>
+                It can display the numbers entered,
+                mathematical operators and calculated
+                results.
+            </p>
+
+            <p>
+                For example, the display may show:
+            </p>
+
+            <p>
+                <strong>
+                    25 + 15 = 40
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- POTENTIOMETER -->
+
+        <section class="detail-section">
+
+            <h2>
+                LCD Contrast Control
+            </h2>
+
+            <p>
+                A 10kΩ potentiometer can be used to adjust
+                the contrast of the 16×2 LCD display.
+            </p>
+
+            <p>
+                Adjusting the potentiometer makes the
+                characters on the LCD easier to see.
+            </p>
+
+        </section>
+
+
+        <!-- OPERATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Mathematical Operations
+            </h2>
+
+            <p>
+                The calculator can be programmed to perform
+                several basic mathematical operations.
+            </p>
+
+            <ul>
+
+                <li>
+                    Addition
+                </li>
+
+                <li>
+                    Subtraction
+                </li>
+
+                <li>
+                    Multiplication
+                </li>
+
+                <li>
+                    Division
+                </li>
+
+            </ul>
+
+            <p>
+                Example:
+            </p>
+
+            <ul>
+
+                <li>
+                    10 + 5 = 15
+                </li>
+
+                <li>
+                    20 - 8 = 12
+                </li>
+
+                <li>
+                    6 × 4 = 24
+                </li>
+
+                <li>
+                    20 ÷ 5 = 4
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- WORKING PRINCIPLE -->
+
+        <section class="detail-section">
+
+            <h2>
+                Working Principle
+            </h2>
+
+            <p>
+                When the calculator is powered on, the
+                Arduino initializes the keypad and LCD.
+            </p>
+
+            <p>
+                The user enters a number using the keypad.
+                The Arduino detects each key press and
+                stores the corresponding value.
+            </p>
+
+            <p>
+                The user then enters a mathematical operator
+                followed by the second number.
+            </p>
+
+            <p>
+                When the equals key is pressed, the Arduino
+                performs the selected operation.
+            </p>
+
+            <p>
+                The calculated result is then displayed
+                on the LCD.
+            </p>
+
+        </section>
+
+
+        <!-- OPERATION SEQUENCE -->
+
+        <section class="detail-section">
+
+            <h2>
+                System Operation Sequence
+            </h2>
+
+            <ul>
+
+                <li>
+                    Switch on the calculator.
+                </li>
+
+                <li>
+                    Arduino initializes the system.
+                </li>
+
+                <li>
+                    LCD displays the initial message.
+                </li>
+
+                <li>
+                    User enters the first number.
+                </li>
+
+                <li>
+                    User selects an arithmetic operator.
+                </li>
+
+                <li>
+                    User enters the second number.
+                </li>
+
+                <li>
+                    User presses the equals key.
+                </li>
+
+                <li>
+                    Arduino performs the calculation.
+                </li>
+
+                <li>
+                    Result is displayed on the LCD.
+                </li>
+
+                <li>
+                    User can clear the display and
+                    perform another calculation.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- EXAMPLE -->
+
+        <section class="detail-section">
+
+            <h2>
+                Example of Operation
+            </h2>
+
+            <p>
+                Suppose the user wants to calculate:
+            </p>
+
+            <p>
+                <strong>
+                    25 + 15
+                </strong>
+            </p>
+
+            <p>
+                The user enters 25 using the keypad,
+                selects the addition operator (+), and
+                then enters 15.
+            </p>
+
+            <p>
+                After pressing the equals (=) key,
+                the Arduino calculates the result.
+            </p>
+
+            <p>
+                The LCD displays:
+            </p>
+
+            <p>
+                <strong>
+                    25 + 15 = 40
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- ERROR HANDLING -->
+
+        <section class="detail-section">
+
+            <h2>
+                Error Handling
+            </h2>
+
+            <p>
+                The calculator can be programmed to
+                identify invalid operations.
+            </p>
+
+            <p>
+                One important example is division by zero.
+            </p>
+
+            <p>
+                If the user attempts to divide a number
+                by zero, the system should display an
+                appropriate error message instead of
+                producing an invalid result.
+            </p>
+
+            <p>
+                Example:
+            </p>
+
+            <p>
+                <strong>
+                    Error: Cannot divide by zero
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- APPLICATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Applications
+            </h2>
+
+            <ul>
+
+                <li>
+                    Educational demonstrations
+                </li>
+
+                <li>
+                    Arduino programming practice
+                </li>
+
+                <li>
+                    Electronics laboratories
+                </li>
+
+                <li>
+                    School projects
+                </li>
+
+                <li>
+                    Microcontroller training
+                </li>
+
+                <li>
+                    Basic mathematical calculations
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ADVANTAGES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Advantages
+            </h2>
+
+            <ul>
+
+                <li>
+                    Simple to understand and operate.
+                </li>
+
+                <li>
+                    Provides immediate calculation results.
+                </li>
+
+                <li>
+                    Demonstrates practical Arduino programming.
+                </li>
+
+                <li>
+                    Uses commonly available components.
+                </li>
+
+                <li>
+                    Can be modified and expanded.
+                </li>
+
+                <li>
+                    Useful for electronics and programming
+                    education.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- LIMITATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Limitations
+            </h2>
+
+            <ul>
+
+                <li>
+                    Basic versions may support only
+                    simple arithmetic operations.
+                </li>
+
+                <li>
+                    The number of keypad functions depends
+                    on the programmed software.
+                </li>
+
+                <li>
+                    LCD displays have limited display space.
+                </li>
+
+                <li>
+                    Complex mathematical functions require
+                    additional programming.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- FUTURE IMPROVEMENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Future Improvements
+            </h2>
+
+            <ul>
+
+                <li>
+                    Add scientific calculator functions.
+                </li>
+
+                <li>
+                    Add square root calculations.
+                </li>
+
+                <li>
+                    Add percentage calculations.
+                </li>
+
+                <li>
+                    Add memory functions.
+                </li>
+
+                <li>
+                    Upgrade the display to an OLED screen.
+                </li>
+
+                <li>
+                    Add touch-screen input.
+                </li>
+
+                <li>
+                    Add voice-controlled calculations.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+        <h2>
+            Want to Build This Project?
+        </h2>
+
+        <p>
+            Contact MAGAZAWA TECH HUB for
+            project guidance and technical support.
+        </p>
+
+        <a
+            href="../contact.html"
+            class="cta-button"
+        >
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MAGAZAWA TECH HUB.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            SULEMAN YUNUSA
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

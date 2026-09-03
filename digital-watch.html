@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Digital Watch |
+        MAGAZAWA TECH HUB
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            MAGAZAWA TECH HUB
+        </div>
+
+        <nav>
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../projects.html">
+                Projects
+            </a>
+
+            <a href="../tutorials.html">
+                Tutorials
+            </a>
+
+            <a href="../courses.html">
+                Courses
+            </a>
+
+            <a href="../services.html">
+                Services
+            </a>
+
+            <a href="../contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PROJECT HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <h1>
+            Digital Watch
+        </h1>
+
+        <p>
+            Arduino-based digital watch with
+            temperature and humidity display.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECT DETAILS
+    ========================== -->
+
+    <main class="project-details">
+
+
+        <!-- OVERVIEW -->
+
+        <section class="detail-section">
+
+            <h2>
+                Project Overview
+            </h2>
+
+            <p>
+                The Digital Watch is an Arduino-based
+                electronic system designed to display
+                time together with environmental
+                temperature and humidity information.
+            </p>
+
+            <p>
+                The system combines a real-time clock,
+                environmental sensor, microcontroller
+                and display unit to provide useful
+                information to the user.
+            </p>
+
+        </section>
+
+
+        <!-- AIM -->
+
+        <section class="detail-section">
+
+            <h2>
+                Aim of the Project
+            </h2>
+
+            <p>
+                The aim of this project is to develop
+                a digital watch using an Arduino
+                microcontroller that can display
+                accurate time together with temperature
+                and humidity readings.
+            </p>
+
+        </section>
+
+
+        <!-- OBJECTIVES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Objectives
+            </h2>
+
+            <ul>
+
+                <li>
+                    Display the current time.
+                </li>
+
+                <li>
+                    Measure environmental temperature.
+                </li>
+
+                <li>
+                    Measure relative humidity.
+                </li>
+
+                <li>
+                    Display sensor measurements.
+                </li>
+
+                <li>
+                    Develop an Arduino-based embedded
+                    monitoring system.
+                </li>
+
+                <li>
+                    Provide a simple and useful digital
+                    information display.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- COMPONENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Main Components
+            </h2>
+
+            <ul>
+
+                <li>
+                    Arduino Uno
+                </li>
+
+                <li>
+                    Real-Time Clock (RTC) module
+                </li>
+
+                <li>
+                    DHT11 temperature and humidity sensor
+                </li>
+
+                <li>
+                    16×2 LCD or OLED display
+                </li>
+
+                <li>
+                    Resistors
+                </li>
+
+                <li>
+                    Connecting wires
+                </li>
+
+                <li>
+                    Power supply
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ARDUINO -->
+
+        <section class="detail-section">
+
+            <h2>
+                Arduino Uno
+            </h2>
+
+            <p>
+                The Arduino Uno acts as the main controller
+                of the system.
+            </p>
+
+            <p>
+                It receives time information from the
+                real-time clock and environmental
+                measurements from the temperature and
+                humidity sensor.
+            </p>
+
+            <p>
+                The Arduino processes this information
+                and sends the results to the display.
+            </p>
+
+        </section>
+
+
+        <!-- RTC -->
+
+        <section class="detail-section">
+
+            <h2>
+                Real-Time Clock
+            </h2>
+
+            <p>
+                A real-time clock module can be used to
+                maintain the current time and date.
+            </p>
+
+            <p>
+                The RTC communicates with the Arduino
+                and provides information such as hours,
+                minutes, seconds and date.
+            </p>
+
+            <p>
+                Using a dedicated RTC helps the system
+                maintain time independently of the main
+                program timing loop.
+            </p>
+
+        </section>
+
+
+        <!-- TEMPERATURE AND HUMIDITY -->
+
+        <section class="detail-section">
+
+            <h2>
+                Temperature and Humidity Sensor
+            </h2>
+
+            <p>
+                The DHT11 sensor can be used to measure
+                environmental temperature and relative
+                humidity.
+            </p>
+
+            <p>
+                The sensor sends its measurement data
+                to the Arduino, which processes the
+                readings and displays them to the user.
+            </p>
+
+        </section>
+
+
+        <!-- DISPLAY -->
+
+        <section class="detail-section">
+
+            <h2>
+                Display Unit
+            </h2>
+
+            <p>
+                A display is used to present the system
+                information in an easy-to-read format.
+            </p>
+
+            <p>
+                Depending on the selected display, the
+                system can show:
+            </p>
+
+            <ul>
+
+                <li>
+                    Hours
+                </li>
+
+                <li>
+                    Minutes
+                </li>
+
+                <li>
+                    Seconds
+                </li>
+
+                <li>
+                    Temperature
+                </li>
+
+                <li>
+                    Humidity
+                </li>
+
+                <li>
+                    Date
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- WORKING PRINCIPLE -->
+
+        <section class="detail-section">
+
+            <h2>
+                How the System Works
+            </h2>
+
+            <p>
+                When the system is powered on, the Arduino
+                initializes the connected modules.
+            </p>
+
+            <p>
+                The RTC provides the current time and date.
+                At the same time, the environmental sensor
+                provides temperature and humidity readings.
+            </p>
+
+            <p>
+                The Arduino processes the information and
+                updates the display.
+            </p>
+
+            <p>
+                This process continues repeatedly while
+                the system is operating.
+            </p>
+
+        </section>
+
+
+        <!-- TIME DISPLAY -->
+
+        <section class="detail-section">
+
+            <h2>
+                Time Display
+            </h2>
+
+            <p>
+                The display can show the current time in
+                hours, minutes and seconds.
+            </p>
+
+            <p>
+                Example:
+            </p>
+
+            <p>
+                <strong>
+                    TIME: 10:45:32
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- TEMPERATURE DISPLAY -->
+
+        <section class="detail-section">
+
+            <h2>
+                Temperature Display
+            </h2>
+
+            <p>
+                The measured environmental temperature
+                can be displayed in degrees Celsius.
+            </p>
+
+            <p>
+                Example:
+            </p>
+
+            <p>
+                <strong>
+                    TEMP: 28°C
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- HUMIDITY DISPLAY -->
+
+        <section class="detail-section">
+
+            <h2>
+                Humidity Display
+            </h2>
+
+            <p>
+                The system can also display relative
+                humidity as a percentage.
+            </p>
+
+            <p>
+                Example:
+            </p>
+
+            <p>
+                <strong>
+                    HUMIDITY: 65%
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- SYSTEM OPERATION -->
+
+        <section class="detail-section">
+
+            <h2>
+                System Operation Sequence
+            </h2>
+
+            <ul>
+
+                <li>
+                    Power on the system.
+                </li>
+
+                <li>
+                    Initialize the Arduino.
+                </li>
+
+                <li>
+                    Initialize the RTC.
+                </li>
+
+                <li>
+                    Initialize the temperature and humidity
+                    sensor.
+                </li>
+
+                <li>
+                    Read the current time.
+                </li>
+
+                <li>
+                    Read temperature and humidity.
+                </li>
+
+                <li>
+                    Update the display.
+                </li>
+
+                <li>
+                    Repeat the monitoring process.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- APPLICATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Applications
+            </h2>
+
+            <ul>
+
+                <li>
+                    Home information displays
+                </li>
+
+                <li>
+                    Classrooms
+                </li>
+
+                <li>
+                    Laboratories
+                </li>
+
+                <li>
+                    Offices
+                </li>
+
+                <li>
+                    Weather monitoring demonstrations
+                </li>
+
+                <li>
+                    Arduino educational projects
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ADVANTAGES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Advantages
+            </h2>
+
+            <ul>
+
+                <li>
+                    Displays time and environmental
+                    information in one system.
+                </li>
+
+                <li>
+                    Easy to understand.
+                </li>
+
+                <li>
+                    Uses inexpensive electronic components.
+                </li>
+
+                <li>
+                    Useful for Arduino learning.
+                </li>
+
+                <li>
+                    Can be expanded with additional sensors.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- LIMITATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Limitations
+            </h2>
+
+            <ul>
+
+                <li>
+                    Sensor accuracy depends on the sensor
+                    used.
+                </li>
+
+                <li>
+                    Some basic RTC modules may require
+                    periodic time adjustment.
+                </li>
+
+                <li>
+                    LCD space limits the amount of
+                    information displayed at once.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- FUTURE IMPROVEMENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Future Improvements
+            </h2>
+
+            <ul>
+
+                <li>
+                    Add alarm functionality.
+                </li>
+
+                <li>
+                    Add date and day display.
+                </li>
+
+                <li>
+                    Add touchscreen control.
+                </li>
+
+                <li>
+                    Add Wi-Fi connectivity.
+                </li>
+
+                <li>
+                    Add mobile monitoring.
+                </li>
+
+                <li>
+                    Add weather information.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+        <h2>
+            Want to Build This Project?
+        </h2>
+
+        <p>
+            Contact MAGAZAWA TECH HUB for
+            project guidance and technical support.
+        </p>
+
+        <a
+            href="../contact.html"
+            class="cta-button"
+        >
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MAGAZAWA TECH HUB.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            SULEMAN YUNUSA
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

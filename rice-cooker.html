@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Automatic Rice Cooker |
+        MAGAZAWA TECH HUB
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            MAGAZAWA TECH HUB
+        </div>
+
+        <nav>
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../projects.html">
+                Projects
+            </a>
+
+            <a href="../tutorials.html">
+                Tutorials
+            </a>
+
+            <a href="../courses.html">
+                Courses
+            </a>
+
+            <a href="../services.html">
+                Services
+            </a>
+
+            <a href="../contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PROJECT HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <h1>
+            Automatic Rice Cooker
+        </h1>
+
+        <p>
+            Microcontroller-based automatic cooking
+            and temperature control system.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECT DETAILS
+    ========================== -->
+
+    <main class="project-details">
+
+
+        <!-- PROJECT OVERVIEW -->
+
+        <section class="detail-section">
+
+            <h2>
+                Project Overview
+            </h2>
+
+            <p>
+                The Automatic Rice Cooker is a
+                microcontroller-based system designed
+                to control the cooking process using
+                temperature monitoring and automatic
+                switching.
+            </p>
+
+            <p>
+                An Arduino Uno receives temperature
+                information from a sensor and controls
+                the cooking system through an appropriate
+                switching device.
+            </p>
+
+            <p>
+                A display can also be used to provide
+                information about the operating status
+                of the cooker.
+            </p>
+
+        </section>
+
+
+        <!-- AIM -->
+
+        <section class="detail-section">
+
+            <h2>
+                Aim of the Project
+            </h2>
+
+            <p>
+                The aim of this project is to develop an
+                automatic rice cooking control system
+                capable of monitoring temperature and
+                automatically controlling the cooking
+                and warming processes.
+            </p>
+
+        </section>
+
+
+        <!-- OBJECTIVES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Objectives
+            </h2>
+
+            <ul>
+
+                <li>
+                    Monitor cooking temperature.
+                </li>
+
+                <li>
+                    Automatically control the cooking
+                    process.
+                </li>
+
+                <li>
+                    Provide a warming mode after cooking.
+                </li>
+
+                <li>
+                    Display the operating status.
+                </li>
+
+                <li>
+                    Reduce unnecessary continuous heating.
+                </li>
+
+                <li>
+                    Develop a practical Arduino-based
+                    control system.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- MAIN COMPONENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Main Components
+            </h2>
+
+            <ul>
+
+                <li>
+                    Arduino Uno
+                </li>
+
+                <li>
+                    LM35 temperature sensor
+                </li>
+
+                <li>
+                    16×2 LCD display
+                </li>
+
+                <li>
+                    Relay module or suitable solid-state
+                    switching device
+                </li>
+
+                <li>
+                    Cooking heating element
+                </li>
+
+                <li>
+                    LEDs for status indication
+                </li>
+
+                <li>
+                    Resistors
+                </li>
+
+                <li>
+                    Connecting wires
+                </li>
+
+                <li>
+                    Suitable power supply
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- TEMPERATURE SENSOR -->
+
+        <section class="detail-section">
+
+            <h2>
+                Temperature Monitoring
+            </h2>
+
+            <p>
+                The LM35 temperature sensor can be used
+                to measure temperature and provide an
+                analog voltage to the Arduino.
+            </p>
+
+            <p>
+                The Arduino reads the sensor signal and
+                converts the measurement into a temperature
+                value that can be used by the control program.
+            </p>
+
+            <p>
+                The sensor allows the controller to determine
+                when the cooking process has reached the
+                programmed condition.
+            </p>
+
+        </section>
+
+
+        <!-- WORKING PRINCIPLE -->
+
+        <section class="detail-section">
+
+            <h2>
+                How the System Works
+            </h2>
+
+            <p>
+                When the cooker is switched on, the Arduino
+                begins monitoring the temperature sensor.
+            </p>
+
+            <p>
+                During the cooking stage, the controller
+                activates the heating system through an
+                appropriate switching device.
+            </p>
+
+            <p>
+                The temperature is continuously monitored.
+                When the programmed cooking condition is
+                reached, the controller changes the operating
+                state.
+            </p>
+
+            <p>
+                The system can then enter a warming mode
+                rather than continuing the main cooking
+                heating cycle.
+            </p>
+
+        </section>
+
+
+        <!-- COOKING MODE -->
+
+        <section class="detail-section">
+
+            <h2>
+                Cooking Mode
+            </h2>
+
+            <p>
+                During cooking mode, the heating element
+                is controlled according to the temperature
+                and control conditions programmed into the
+                Arduino.
+            </p>
+
+            <p>
+                A red LED can be used to indicate that the
+                cooker is currently in cooking mode.
+            </p>
+
+        </section>
+
+
+        <!-- WARMING MODE -->
+
+        <section class="detail-section">
+
+            <h2>
+                Warming Mode
+            </h2>
+
+            <p>
+                After the cooking stage, the system can
+                enter a warming state.
+            </p>
+
+            <p>
+                A green LED can be used to indicate the
+                warming condition.
+            </p>
+
+            <p>
+                The exact temperature thresholds and
+                switching behavior should be selected
+                according to the actual cooker design,
+                heating element and safety requirements.
+            </p>
+
+        </section>
+
+
+        <!-- LCD DISPLAY -->
+
+        <section class="detail-section">
+
+            <h2>
+                LCD Display
+            </h2>
+
+            <p>
+                A 16×2 LCD can be used to display useful
+                information to the user.
+            </p>
+
+            <ul>
+
+                <li>
+                    Current temperature
+                </li>
+
+                <li>
+                    Cooking status
+                </li>
+
+                <li>
+                    Warming status
+                </li>
+
+                <li>
+                    System messages
+                </li>
+
+            </ul>
+
+            <p>
+                For example, the display could show:
+            </p>
+
+            <p>
+                <strong>
+                    Temperature: 85°C
+                </strong>
+            </p>
+
+            <p>
+                followed by a status such as:
+            </p>
+
+            <p>
+                <strong>
+                    Cooking...
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- RELAY CONTROL -->
+
+        <section class="detail-section">
+
+            <h2>
+                Heating Control
+            </h2>
+
+            <p>
+                The Arduino should not directly power a
+                high-power heating element.
+            </p>
+
+            <p>
+                Instead, an appropriately rated switching
+                device and properly designed electrical
+                isolation and protection should be used.
+            </p>
+
+            <p>
+                For an academic prototype, the control
+                concept can be demonstrated using a relay
+                module, while real mains-voltage construction
+                requires qualified electrical design and
+                appropriate safety measures.
+            </p>
+
+        </section>
+
+
+        <!-- CONTROL LOGIC -->
+
+        <section class="detail-section">
+
+            <h2>
+                Control Logic
+            </h2>
+
+            <p>
+                The basic control sequence can be represented
+                as follows:
+            </p>
+
+            <ul>
+
+                <li>
+                    Start system.
+                </li>
+
+                <li>
+                    Read temperature.
+                </li>
+
+                <li>
+                    Activate cooking control.
+                </li>
+
+                <li>
+                    Continue monitoring temperature.
+                </li>
+
+                <li>
+                    Change to warming condition when the
+                    programmed condition is reached.
+                </li>
+
+                <li>
+                    Display the current operating status.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- APPLICATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Applications
+            </h2>
+
+            <ul>
+
+                <li>
+                    Automatic cooking systems
+                </li>
+
+                <li>
+                    Embedded control education
+                </li>
+
+                <li>
+                    Arduino projects
+                </li>
+
+                <li>
+                    Temperature-control experiments
+                </li>
+
+                <li>
+                    Engineering student projects
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ADVANTAGES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Advantages
+            </h2>
+
+            <ul>
+
+                <li>
+                    Automatic temperature monitoring.
+                </li>
+
+                <li>
+                    Reduced need for manual control.
+                </li>
+
+                <li>
+                    Clear operating status.
+                </li>
+
+                <li>
+                    Practical application of microcontrollers.
+                </li>
+
+                <li>
+                    Can be expanded with additional sensors.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- FUTURE IMPROVEMENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Future Improvements
+            </h2>
+
+            <ul>
+
+                <li>
+                    Add cooking time control.
+                </li>
+
+                <li>
+                    Add multiple cooking modes.
+                </li>
+
+                <li>
+                    Add keypad control.
+                </li>
+
+                <li>
+                    Add digital temperature sensing.
+                </li>
+
+                <li>
+                    Add mobile monitoring.
+                </li>
+
+                <li>
+                    Add fault detection.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+        <h2>
+            Want to Build This Project?
+        </h2>
+
+        <p>
+            Contact MAGAZAWA TECH HUB for
+            project guidance and technical support.
+        </p>
+
+        <a
+            href="../contact.html"
+            class="cta-button"
+        >
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MAGAZAWA TECH HUB.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            SULEMAN YUNUSA
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

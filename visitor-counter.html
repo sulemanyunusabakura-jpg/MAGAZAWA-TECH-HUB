@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Digital Visitor Counter |
+        MAGAZAWA TECH HUB
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            MAGAZAWA TECH HUB
+        </div>
+
+        <nav>
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../projects.html">
+                Projects
+            </a>
+
+            <a href="../tutorials.html">
+                Tutorials
+            </a>
+
+            <a href="../courses.html">
+                Courses
+            </a>
+
+            <a href="../services.html">
+                Services
+            </a>
+
+            <a href="../contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PROJECT HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <h1>
+            Digital Visitor Counter
+        </h1>
+
+        <p>
+            8051 microcontroller-based visitor
+            counting system with IR sensors and LCD.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECT DETAILS
+    ========================== -->
+
+    <main class="project-details">
+
+
+        <!-- PROJECT OVERVIEW -->
+
+        <section class="detail-section">
+
+            <h2>
+                Project Overview
+            </h2>
+
+            <p>
+                The Digital Visitor Counter is an
+                electronic system designed to automatically
+                count people entering and leaving a room,
+                office, laboratory or other controlled area.
+            </p>
+
+            <p>
+                The system uses an 8051 microcontroller,
+                two infrared sensors and a 16×2 LCD display
+                to detect movement and display the number
+                of people currently inside the area.
+            </p>
+
+        </section>
+
+
+        <!-- AIM -->
+
+        <section class="detail-section">
+
+            <h2>
+                Aim of the Project
+            </h2>
+
+            <p>
+                The aim of this project is to design an
+                automatic visitor counting system using
+                an 8051 microcontroller, infrared sensors
+                and an LCD display.
+            </p>
+
+        </section>
+
+
+        <!-- OBJECTIVES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Objectives
+            </h2>
+
+            <ul>
+
+                <li>
+                    Detect people entering an area.
+                </li>
+
+                <li>
+                    Detect people leaving an area.
+                </li>
+
+                <li>
+                    Automatically increase the visitor
+                    count when a person enters.
+                </li>
+
+                <li>
+                    Automatically decrease the count when
+                    a person leaves.
+                </li>
+
+                <li>
+                    Display the current number of people.
+                </li>
+
+                <li>
+                    Develop a practical 8051-based
+                    embedded system.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- MAIN COMPONENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Main Components
+            </h2>
+
+            <ul>
+
+                <li>
+                    8051 microcontroller
+                </li>
+
+                <li>
+                    IR transmitter and receiver sensors
+                </li>
+
+                <li>
+                    16×2 LCD display
+                </li>
+
+                <li>
+                    Crystal oscillator
+                </li>
+
+                <li>
+                    Capacitors
+                </li>
+
+                <li>
+                    Resistors
+                </li>
+
+                <li>
+                    Power supply
+                </li>
+
+                <li>
+                    Connecting wires
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 8051 -->
+
+        <section class="detail-section">
+
+            <h2>
+                8051 Microcontroller
+            </h2>
+
+            <p>
+                The 8051 microcontroller serves as the
+                main controller of the visitor counting
+                system.
+            </p>
+
+            <p>
+                It receives signals from the infrared
+                sensors, processes the sensor sequence
+                and updates the visitor count.
+            </p>
+
+            <p>
+                The calculated count is then sent to the
+                LCD display.
+            </p>
+
+        </section>
+
+
+        <!-- IR SENSORS -->
+
+        <section class="detail-section">
+
+            <h2>
+                IR Sensor System
+            </h2>
+
+            <p>
+                Two infrared sensing points are used in
+                the system.
+            </p>
+
+            <p>
+                One sensor is positioned to detect people
+                entering the area, while the other sensor
+                detects people leaving the area.
+            </p>
+
+            <p>
+                The controller interprets the sensor
+                sequence to determine the direction of
+                movement.
+            </p>
+
+        </section>
+
+
+        <!-- ENTRY -->
+
+        <section class="detail-section">
+
+            <h2>
+                Entry Detection
+            </h2>
+
+            <p>
+                When a person passes through the entrance,
+                the entry sensor detects the movement.
+            </p>
+
+            <p>
+                The 8051 processes the sensor signal and
+                increases the visitor count by one.
+            </p>
+
+            <p>
+                For example:
+            </p>
+
+            <p>
+                <strong>
+                    Previous Count: 5
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    New Count: 6
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- EXIT -->
+
+        <section class="detail-section">
+
+            <h2>
+                Exit Detection
+            </h2>
+
+            <p>
+                When a person leaves the monitored area,
+                the exit sensor detects the movement.
+            </p>
+
+            <p>
+                The 8051 processes the signal and decreases
+                the visitor count by one.
+            </p>
+
+            <p>
+                The system should prevent the count from
+                becoming negative.
+            </p>
+
+            <p>
+                For example:
+            </p>
+
+            <p>
+                <strong>
+                    Previous Count: 6
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    New Count: 5
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- COUNTING LOGIC -->
+
+        <section class="detail-section">
+
+            <h2>
+                Counting Logic
+            </h2>
+
+            <p>
+                The basic counting logic is:
+            </p>
+
+            <ul>
+
+                <li>
+                    Detect entry sensor activation.
+                </li>
+
+                <li>
+                    Confirm the movement sequence.
+                </li>
+
+                <li>
+                    Increase the count.
+                </li>
+
+                <li>
+                    Detect exit sensor activation.
+                </li>
+
+                <li>
+                    Confirm the exit movement sequence.
+                </li>
+
+                <li>
+                    Decrease the count.
+                </li>
+
+                <li>
+                    Update the LCD display.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- LCD -->
+
+        <section class="detail-section">
+
+            <h2>
+                LCD Display
+            </h2>
+
+            <p>
+                The 16×2 LCD displays the number of people
+                currently detected inside the monitored area.
+            </p>
+
+            <p>
+                Example display:
+            </p>
+
+            <p>
+                <strong>
+                    PEOPLE INSIDE
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    COUNT: 12
+                </strong>
+            </p>
+
+        </section>
+
+
+        <!-- SYSTEM OPERATION -->
+
+        <section class="detail-section">
+
+            <h2>
+                System Operation
+            </h2>
+
+            <p>
+                When the system is powered on, the 8051
+                initializes the LCD and sensor inputs.
+            </p>
+
+            <p>
+                The controller continuously monitors both
+                infrared sensors.
+            </p>
+
+            <p>
+                When a valid entry sequence is detected,
+                the count increases.
+            </p>
+
+            <p>
+                When a valid exit sequence is detected,
+                the count decreases.
+            </p>
+
+            <p>
+                The LCD is updated whenever the count changes.
+            </p>
+
+        </section>
+
+
+        <!-- BLOCK DIAGRAM DESCRIPTION -->
+
+        <section class="detail-section">
+
+            <h2>
+                System Structure
+            </h2>
+
+            <p>
+                The major parts of the system are connected
+                in the following logical arrangement:
+            </p>
+
+            <ul>
+
+                <li>
+                    Entry IR Sensor → 8051
+                </li>
+
+                <li>
+                    Exit IR Sensor → 8051
+                </li>
+
+                <li>
+                    8051 → 16×2 LCD
+                </li>
+
+                <li>
+                    Power Supply → System Components
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- APPLICATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Applications
+            </h2>
+
+            <ul>
+
+                <li>
+                    Offices
+                </li>
+
+                <li>
+                    Classrooms
+                </li>
+
+                <li>
+                    Laboratories
+                </li>
+
+                <li>
+                    Libraries
+                </li>
+
+                <li>
+                    Meeting rooms
+                </li>
+
+                <li>
+                    Exhibition halls
+                </li>
+
+                <li>
+                    Shopping environments
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ADVANTAGES -->
+
+        <section class="detail-section">
+
+            <h2>
+                Advantages
+            </h2>
+
+            <ul>
+
+                <li>
+                    Automatic visitor counting.
+                </li>
+
+                <li>
+                    Reduces manual counting.
+                </li>
+
+                <li>
+                    Provides real-time count information.
+                </li>
+
+                <li>
+                    Simple electronic architecture.
+                </li>
+
+                <li>
+                    Useful for embedded-system education.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- LIMITATIONS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Limitations
+            </h2>
+
+            <ul>
+
+                <li>
+                    Sensor alignment can affect detection.
+                </li>
+
+                <li>
+                    Multiple people passing simultaneously
+                    may require improved detection logic.
+                </li>
+
+                <li>
+                    Strong environmental interference
+                    can affect some IR sensors.
+                </li>
+
+                <li>
+                    The system requires suitable placement
+                    of the two sensing points.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- FUTURE IMPROVEMENTS -->
+
+        <section class="detail-section">
+
+            <h2>
+                Future Improvements
+            </h2>
+
+            <ul>
+
+                <li>
+                    Add wireless monitoring.
+                </li>
+
+                <li>
+                    Add data logging.
+                </li>
+
+                <li>
+                    Add automatic daily visitor statistics.
+                </li>
+
+                <li>
+                    Add a larger display.
+                </li>
+
+                <li>
+                    Add cloud-based monitoring.
+                </li>
+
+                <li>
+                    Improve multiple-person detection.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+        <h2>
+            Want to Build This Project?
+        </h2>
+
+        <p>
+            Contact MAGAZAWA TECH HUB for
+            project guidance and technical support.
+        </p>
+
+        <a
+            href="../contact.html"
+            class="cta-button"
+        >
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 MAGAZAWA TECH HUB.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            SULEMAN YUNUSA
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
