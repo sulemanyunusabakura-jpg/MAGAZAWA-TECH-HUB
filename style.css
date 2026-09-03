@@ -1,0 +1,2148 @@
+/* =========================================================
+   MAGAZAWA TECH HUB
+   COMPLETE MASTER STYLESHEET
+   Lessons 1 - 27
+========================================================= */
+
+
+/* =========================================================
+   1. GENERAL SETTINGS
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color: #222;
+
+    line-height: 1.6;
+}
+
+a {
+    transition: 0.3s ease;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   2. NAVIGATION BAR
+========================================================= */
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #0b3d91;
+
+    padding: 18px 6%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.logo {
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    padding: 8px 0;
+}
+
+
+nav a:hover {
+    color: #dbe8ff;
+
+    text-decoration: none;
+}
+
+
+/* ACTIVE PAGE */
+
+nav a.active {
+    color: white;
+
+    border-bottom: 3px solid white;
+
+    padding-bottom: 5px;
+}
+
+
+/* =========================================================
+   3. MOBILE MENU BUTTON
+========================================================= */
+
+.menu-button {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    padding: 5px 10px;
+}
+
+
+/* =========================================================
+   4. HERO SECTION
+========================================================= */
+
+.hero {
+    min-height: 620px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f0ff,
+            #f8fbff
+        );
+}
+
+
+.hero-content {
+    max-width: 900px;
+}
+
+
+.hero h1 {
+    color: #0b3d91;
+
+    font-size: 54px;
+
+    line-height: 1.15;
+
+    margin: 0 0 25px;
+}
+
+
+.hero p {
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    max-width: 750px;
+
+    margin: 0 auto 35px;
+}
+
+
+.hero-button,
+.secondary-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+
+.hero-button {
+    background-color: #0b3d91;
+
+    color: white;
+
+    box-shadow:
+        0 5px 15px rgba(11, 61, 145, 0.25);
+}
+
+
+.hero-button:hover {
+    background-color: #06265c;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+.secondary-button {
+    background-color: white;
+
+    color: #0b3d91;
+
+    border: 2px solid #0b3d91;
+}
+
+
+.secondary-button:hover {
+    background-color: #0b3d91;
+
+    color: white;
+}
+
+
+/* =========================================================
+   5. ABOUT SECTION
+========================================================= */
+
+.about-section {
+    padding: 90px 6%;
+
+    background-color: white;
+}
+
+
+.about-content {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.about-content h2 {
+    color: #0b3d91;
+
+    font-size: 38px;
+
+    margin: 0 0 25px;
+}
+
+
+.about-content p {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+.about-button {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 25px;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+
+.about-button:hover {
+    background-color: #06265c;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   6. WHAT WE OFFER
+========================================================= */
+
+.offers {
+    padding: 90px 6%;
+
+    text-align: center;
+
+    background-color: #f4f7fb;
+}
+
+
+.offers h2 {
+    color: #0b3d91;
+
+    font-size: 38px;
+
+    margin-top: 0;
+
+    margin-bottom: 35px;
+}
+
+
+#offerMessage {
+    max-width: 750px;
+
+    margin: 0 auto 25px;
+
+    line-height: 1.7;
+
+    background-color: #e8f0ff;
+
+    padding: 18px 25px;
+
+    border-radius: 8px;
+}
+
+
+#toggleButton {
+    border: none;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    padding: 11px 22px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 40px;
+}
+
+
+#toggleButton:hover {
+    background-color: #06265c;
+}
+
+
+.offer-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.offer-card {
+    background-color: white;
+
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s ease;
+}
+
+
+.offer-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.offer-card h3 {
+    color: #0b3d91;
+
+    font-size: 21px;
+}
+
+
+.offer-card p {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   7. FEATURED PROJECTS
+========================================================= */
+
+.featured-projects {
+    padding: 90px 6%;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+
+.featured-projects h2 {
+    color: #0b3d91;
+
+    font-size: 38px;
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+}
+
+
+.featured-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: 45px auto;
+}
+
+
+.featured-card {
+    background-color: #f8faff;
+
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e1e8f5;
+
+    transition: 0.3s ease;
+}
+
+
+.featured-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+.featured-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.featured-card h3 {
+    color: #0b3d91;
+
+    font-size: 21px;
+}
+
+
+.featured-card p {
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+.all-projects-button {
+    display: inline-block;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+.all-projects-button:hover {
+    background-color: #06265c;
+
+    color: white;
+}
+
+
+/* =========================================================
+   8. WHY CHOOSE US
+========================================================= */
+
+.why-section {
+    padding: 90px 6%;
+
+    background-color: #e8f0ff;
+
+    text-align: center;
+}
+
+
+.why-section h2 {
+    color: #0b3d91;
+
+    font-size: 38px;
+
+    margin-top: 0;
+
+    margin-bottom: 45px;
+}
+
+
+.why-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.why-card {
+    background-color: white;
+
+    padding: 30px 22px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.why-card span {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.why-card h3 {
+    color: #0b3d91;
+}
+
+
+.why-card p {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   9. CALL TO ACTION
+========================================================= */
+
+.cta {
+    text-align: center;
+
+    padding: 90px 20px;
+
+    background-color: #0b3d91;
+
+    color: white;
+}
+
+
+.cta h2 {
+    font-size: 38px;
+
+    margin-top: 0;
+}
+
+
+.cta p {
+    font-size: 19px;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+.cta-button {
+    display: inline-block;
+
+    background-color: white;
+
+    color: #0b3d91;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.cta-button:hover {
+    background-color: #e8f0ff;
+
+    color: #0b3d91;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   10. FOOTER
+========================================================= */
+
+footer {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background-color: #061f4a;
+
+    color: white;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================================================
+   11. GENERAL PAGE HEADER
+========================================================= */
+
+.page-header {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f0ff,
+            #f8fbff
+        );
+}
+
+
+.page-header h1 {
+    color: #0b3d91;
+
+    font-size: 44px;
+
+    margin: 0 0 15px;
+}
+
+
+.page-header p {
+    font-size: 19px;
+
+    max-width: 750px;
+
+    margin: auto;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   12. PROJECTS PAGE
+========================================================= */
+
+.projects-section {
+    padding: 80px 6%;
+}
+
+
+.projects-section h2 {
+    text-align: center;
+
+    color: #0b3d91;
+
+    font-size: 35px;
+
+    margin-bottom: 45px;
+}
+
+
+.project-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.project-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.11);
+}
+
+
+.project-card h3 {
+    color: #0b3d91;
+
+    font-size: 22px;
+}
+
+
+.project-card p {
+    line-height: 1.7;
+
+    margin: 15px 0 25px;
+}
+
+
+.project-button {
+    display: inline-block;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+
+.project-button:hover {
+    background-color: #06265c;
+
+    color: white;
+}
+
+
+/* =========================================================
+   13. TUTORIALS PAGE
+========================================================= */
+
+.tutorials-section {
+    padding: 80px 6%;
+}
+
+
+.tutorials-section h2 {
+    text-align: center;
+
+    color: #0b3d91;
+
+    font-size: 35px;
+
+    margin-bottom: 45px;
+}
+
+
+.tutorial-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.tutorial-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s ease;
+}
+
+
+.tutorial-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.11);
+}
+
+
+.tutorial-card h3 {
+    color: #0b3d91;
+
+    font-size: 22px;
+}
+
+
+.tutorial-card p {
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+.tutorial-icon {
+    background-color: #0b3d91;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+.tutorial-button {
+    display: inline-block;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+
+.tutorial-button:hover {
+    background-color: #06265c;
+
+    color: white;
+}
+
+
+/* =========================================================
+   14. COURSES PAGE
+========================================================= */
+
+.courses-section {
+    padding: 80px 6%;
+}
+
+
+.courses-section h2 {
+    text-align: center;
+
+    color: #0b3d91;
+
+    font-size: 35px;
+
+    margin-bottom: 45px;
+}
+
+
+.course-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.course-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    position: relative;
+}
+
+
+.course-card h3 {
+    color: #0b3d91;
+
+    font-size: 22px;
+}
+
+
+.course-card p {
+    line-height: 1.7;
+}
+
+
+.course-card h4 {
+    font-size: 22px;
+
+    color: #0b3d91;
+
+    margin: 20px 0;
+}
+
+
+.course-label {
+    display: inline-block;
+
+    background-color: #e8f0ff;
+
+    color: #0b3d91;
+
+    padding: 7px 12px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.course-card.premium {
+    border: 2px solid #0b3d91;
+}
+
+
+.course-button {
+    display: inline-block;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+
+.course-button:hover {
+    background-color: #06265c;
+
+    color: white;
+}
+
+
+.membership {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-color: #e8f0ff;
+}
+
+
+.membership h2 {
+    color: #0b3d91;
+
+    font-size: 35px;
+}
+
+
+.membership p {
+    max-width: 700px;
+
+    margin: 20px auto 30px;
+
+    line-height: 1.7;
+}
+
+
+.membership-button {
+    display: inline-block;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+.membership-button:hover {
+    background-color: #06265c;
+
+    color: white;
+}
+
+
+/* =========================================================
+   15. SERVICES PAGE
+========================================================= */
+
+.services-section {
+    padding: 80px 6%;
+}
+
+
+.services-section h2 {
+    text-align: center;
+
+    color: #0b3d91;
+
+    font-size: 35px;
+
+    margin-bottom: 45px;
+}
+
+
+.service-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.service-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s ease;
+}
+
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.11);
+}
+
+
+.service-card h3 {
+    color: #0b3d91;
+
+    font-size: 22px;
+}
+
+
+.service-card p {
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+.service-icon {
+    background-color: #0b3d91;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+.service-button {
+    display: inline-block;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+
+.service-button:hover {
+    background-color: #06265c;
+
+    color: white;
+}
+
+
+/* =========================================================
+   16. HOW IT WORKS
+========================================================= */
+
+.how-it-works {
+    background-color: #e8f0ff;
+
+    padding: 80px 6%;
+
+    text-align: center;
+}
+
+
+.how-it-works h2 {
+    color: #0b3d91;
+
+    font-size: 35px;
+
+    margin-bottom: 45px;
+}
+
+
+.steps-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.step {
+    background-color: white;
+
+    padding: 30px 20px;
+
+    border-radius: 10px;
+}
+
+
+.step span {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 48px;
+
+    height: 48px;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.step h3 {
+    color: #0b3d91;
+}
+
+
+.step p {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   17. CONTACT PAGE
+========================================================= */
+
+.contact-section {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+
+    padding: 80px 8%;
+}
+
+
+.contact-info {
+    background-color: #e8f0ff;
+
+    padding: 40px;
+
+    border-radius: 12px;
+}
+
+
+.contact-info h2 {
+    color: #0b3d91;
+
+    font-size: 30px;
+}
+
+
+.contact-info > p {
+    line-height: 1.7;
+
+    margin: 20px 0 35px;
+}
+
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+
+.contact-item h3 {
+    color: #0b3d91;
+
+    margin-bottom: 5px;
+}
+
+
+.contact-item p {
+    margin: 0;
+}
+
+
+.contact-form {
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+.contact-form h2 {
+    color: #0b3d91;
+
+    margin-bottom: 30px;
+}
+
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.contact-form label {
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+}
+
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+
+    border-color: #0b3d91;
+
+    box-shadow:
+        0 0 0 2px rgba(11, 61, 145, 0.08);
+}
+
+
+.contact-form button {
+    width: 100%;
+
+    border: none;
+
+    background-color: #0b3d91;
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 7px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.contact-form button:hover {
+    background-color: #06265c;
+}
+
+
+/* CONTACT RESULT */
+
+#contactResult {
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+
+/* CHARACTER COUNTER */
+
+#characterCount {
+    display: block;
+
+    margin-top: -10px;
+
+    margin-bottom: 15px;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   18. PROJECT DETAILS
+========================================================= */
+
+.project-details {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 70px 6%;
+}
+
+
+.detail-section {
+    background-color: white;
+
+    padding: 35px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+
+.detail-section h2 {
+    color: #0b3d91;
+
+    font-size: 28px;
+
+    margin-top: 0;
+}
+
+
+.detail-section p {
+    line-height: 1.8;
+}
+
+
+.detail-section li {
+    margin-bottom: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   19. TABLES
+========================================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 25px 0;
+}
+
+
+th,
+td {
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    text-align: left;
+}
+
+
+th {
+    background-color: #0b3d91;
+
+    color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f8faff;
+}
+
+
+/* =========================================================
+   20. IMAGES
+========================================================= */
+
+img {
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+.project-image {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 25px auto;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   21. LARGE TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .offer-container,
+    .why-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .featured-container,
+    .project-container,
+    .tutorial-container,
+    .course-container,
+    .service-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .steps-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   22. MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        padding: 15px 5%;
+
+        position: sticky;
+
+        top: 0;
+    }
+
+
+    .logo {
+        font-size: 18px;
+    }
+
+
+    .menu-button {
+        display: block;
+    }
+
+
+    .navbar nav {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        width: 100%;
+
+        background-color: #0b3d91;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0;
+
+        padding: 10px 0;
+
+        box-shadow:
+            0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .navbar nav.mobile-open {
+        display: flex;
+    }
+
+
+    .navbar nav a {
+        display: block;
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 13px 20px;
+
+        color: white;
+    }
+
+
+    .navbar nav a:hover {
+        background-color:
+            rgba(255, 255, 255, 0.12);
+
+        text-decoration: none;
+    }
+
+
+    .navbar nav a.active {
+        background-color:
+            rgba(255, 255, 255, 0.15);
+
+        border-bottom: none;
+    }
+
+
+    .hero {
+        min-height: 550px;
+
+        padding: 60px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .hero p {
+        font-size: 18px;
+    }
+
+
+    .about-content h2,
+    .offers h2,
+    .featured-projects h2,
+    .why-section h2 {
+        font-size: 32px;
+    }
+
+
+    .contact-section {
+        grid-template-columns: 1fr;
+
+        padding: 60px 6%;
+    }
+
+}
+
+
+/* =========================================================
+   23. SMALL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .offer-container,
+    .why-container,
+    .featured-container,
+    .project-container,
+    .tutorial-container,
+    .course-container,
+    .service-container,
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+
+    .hero-button,
+    .secondary-button {
+        width: 100%;
+
+        max-width: 280px;
+
+        text-align: center;
+    }
+
+
+    .page-header {
+        padding: 60px 20px;
+    }
+
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+
+    .page-header p {
+        font-size: 17px;
+    }
+
+
+    .detail-section {
+        padding: 25px;
+    }
+
+
+    .contact-info,
+    .contact-form {
+        padding: 25px;
+    }
+
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+
+    .logo {
+        font-size: 16px;
+    }
+
+
+    nav a {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   24. VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .logo {
+        font-size: 14px;
+    }
+
+
+    .menu-button {
+        font-size: 26px;
+    }
+
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+}
+/* =========================================================
+   LESSON 28 - PROJECT SEARCH
+========================================================= */
+
+.project-search {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+}
+
+.project-search label {
+    display: block;
+    font-weight: bold;
+    color: #0b3d91;
+    margin-bottom: 10px;
+}
+
+.project-search input {
+    width: 100%;
+    padding: 15px 18px;
+    border: 2px solid #d5dce8;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.project-search input:focus {
+    outline: none;
+    border-color: #0b3d91;
+}
+
+.no-projects-message {
+    text-align: center;
+    color: #d00000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+/* =========================================================
+   LESSON 29 - PROJECT CATEGORY FILTER
+========================================================= */
+
+.project-tools {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.project-search,
+.project-filter {
+    text-align: left;
+}
+
+
+.project-search label,
+.project-filter label {
+    display: block;
+
+    font-weight: bold;
+
+    color: #0b3d91;
+
+    margin-bottom: 10px;
+}
+
+
+.project-search input,
+.project-filter select {
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 2px solid #d5dce8;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+}
+
+
+.project-search input:focus,
+.project-filter select:focus {
+    outline: none;
+
+    border-color: #0b3d91;
+}
+
+
+.project-filter select {
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+
+    .project-tools {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .project-tools {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================================
+   LESSON 30 - PROJECT SORTING
+========================================================= */
+
+.project-sort {
+    text-align: left;
+}
+
+.project-sort label {
+    display: block;
+    font-weight: bold;
+    color: #0b3d91;
+    margin-bottom: 10px;
+}
+
+.project-sort select {
+    width: 100%;
+    padding: 15px 18px;
+    border: 2px solid #d5dce8;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    cursor: pointer;
+}
+
+.project-sort select:focus {
+    outline: none;
+    border-color: #0b3d91;
+}
+/* =========================================================
+   LESSON 31 - TUTORIAL SEARCH AND FILTER
+========================================================= */
+
+.tutorial-tools {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.tutorial-search,
+.tutorial-filter {
+    text-align: left;
+}
+
+
+.tutorial-search label,
+.tutorial-filter label {
+    display: block;
+
+    font-weight: bold;
+
+    color: #0b3d91;
+
+    margin-bottom: 10px;
+}
+
+
+.tutorial-search input,
+.tutorial-filter select {
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 2px solid #d5dce8;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+}
+
+
+.tutorial-search input:focus,
+.tutorial-filter select:focus {
+    outline: none;
+
+    border-color: #0b3d91;
+}
+
+
+.tutorial-filter select {
+    cursor: pointer;
+}
+
+
+.no-tutorials-message {
+    text-align: center;
+
+    color: #d00000;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-top: 30px;
+}
+
+
+@media (max-width: 900px) {
+
+    .tutorial-tools {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .tutorial-tools {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================================
+   LESSON 32 - COURSE SEARCH AND FILTER
+========================================================= */
+
+.course-tools {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.course-search,
+.course-filter {
+    text-align: left;
+}
+
+
+.course-search label,
+.course-filter label {
+    display: block;
+
+    font-weight: bold;
+
+    color: #0b3d91;
+
+    margin-bottom: 10px;
+}
+
+
+.course-search input,
+.course-filter select {
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 2px solid #d5dce8;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+}
+
+
+.course-search input:focus,
+.course-filter select:focus {
+    outline: none;
+
+    border-color: #0b3d91;
+}
+
+
+.course-filter select {
+    cursor: pointer;
+}
+
+
+.no-courses-message {
+    text-align: center;
+
+    color: #d00000;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-top: 30px;
+}
+
+
+@media (max-width: 900px) {
+
+    .course-tools {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .course-tools {
+        grid-template-columns: 1fr;
+    }
+
+}
