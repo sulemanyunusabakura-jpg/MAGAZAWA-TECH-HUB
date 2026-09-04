@@ -2379,3 +2379,39 @@ img {
 .mission-point h3 {
     margin-bottom: 12px;
 }
+
+/* =========================
+   WHAT WE DO
+========================= */
+
+.what-we-do {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    margin-bottom: 15px;
+}
+
+.what-we-do-description {
+    max-width: 750px;
+    margin: 10px auto 40px;
+}
+
+.what-we-do-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.what-we-do-card {
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.what-we-do-card h3 {
+    margin-bottom: 12px;
+}
