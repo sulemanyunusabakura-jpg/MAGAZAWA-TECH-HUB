@@ -2415,3 +2415,49 @@ img {
 .what-we-do-card h3 {
     margin-bottom: 12px;
 }
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 15px;
+}
+
+.testimonials-description {
+    max-width: 700px;
+    margin: 10px auto 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 270px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-icon {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.testimonial-card p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.testimonial-card h3 {
+    font-size: 16px;
+}
