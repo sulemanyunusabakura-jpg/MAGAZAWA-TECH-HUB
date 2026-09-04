@@ -2343,3 +2343,39 @@ img {
     gap: 15px;
     flex-wrap: wrap;
 }
+
+/* =========================
+   OUR MISSION
+========================= */
+
+.our-mission {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.our-mission h2 {
+    margin-bottom: 15px;
+}
+
+.mission-description {
+    max-width: 750px;
+    margin: 10px auto 40px;
+}
+
+.mission-points {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.mission-point {
+    width: 260px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.mission-point h3 {
+    margin-bottom: 12px;
+}
