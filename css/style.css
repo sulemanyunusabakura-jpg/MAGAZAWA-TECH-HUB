@@ -2486,3 +2486,82 @@ img {
     gap: 15px;
     flex-wrap: wrap;
 }
+
+/* =========================
+   PROFESSIONAL FOOTER
+========================= */
+
+.site-footer {
+    padding: 60px 20px 20px;
+    background-color: #0b3d91;
+    color: white;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 35px;
+}
+
+.footer-column h3 {
+    margin-bottom: 18px;
+}
+
+.footer-column p {
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid
+        rgba(255, 255, 255, 0.3);
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 6px 0;
+}
+
+
+@media (max-width: 800px) {
+
+    .footer-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+}
