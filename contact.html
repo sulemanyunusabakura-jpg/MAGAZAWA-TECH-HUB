@@ -57,6 +57,7 @@
     </header>
 
 
+
     <!-- =========================
          PAGE HEADER
     ========================== -->
@@ -73,6 +74,7 @@
         </p>
 
     </section>
+
 
 
     <!-- =========================
@@ -103,6 +105,8 @@
                 </p>
 
 
+                <!-- WHATSAPP -->
+
                 <div class="contact-item">
 
                     <span class="contact-icon">
@@ -132,6 +136,8 @@
                 </div>
 
 
+                <!-- PROJECT GUIDANCE -->
+
                 <div class="contact-item">
 
                     <span class="contact-icon">
@@ -154,6 +160,8 @@
                 </div>
 
 
+                <!-- TECHNOLOGY SKILLS -->
+
                 <div class="contact-item">
 
                     <span class="contact-icon">
@@ -175,10 +183,14 @@
 
                 </div>
 
+
             </div>
 
 
-            <!-- CONTACT FORM -->
+
+            <!-- =========================
+                 CONTACT FORM
+            ========================== -->
 
             <div class="contact-form-container">
 
@@ -191,9 +203,14 @@
                 </p>
 
 
+                <!-- FORM SUBMIT -->
+
                 <form
                     action="https://formsubmit.co/magazawatech@gmail.com"
+                    method="POST"
                 >
+
+                    <!-- EMAIL SUBJECT -->
 
                     <input
                         type="hidden"
@@ -201,12 +218,26 @@
                         value="New MAGAZAWA TECH HUB Inquiry"
                     >
 
+
+                    <!-- DISABLE CAPTCHA -->
+
                     <input
                         type="hidden"
                         name="_captcha"
                         value="false"
                     >
 
+
+                    <!-- EMAIL TEMPLATE -->
+
+                    <input
+                        type="hidden"
+                        name="_template"
+                        value="table"
+                    >
+
+
+                    <!-- NAME -->
 
                     <label for="name">
                         Your Name
@@ -221,6 +252,8 @@
                     >
 
 
+                    <!-- PHONE -->
+
                     <label for="phone">
                         Phone Number
                     </label>
@@ -233,6 +266,8 @@
                         required
                     >
 
+
+                    <!-- SERVICE -->
 
                     <label for="service">
                         What do you need?
@@ -279,6 +314,8 @@
                     </select>
 
 
+                    <!-- MESSAGE -->
+
                     <label for="message">
                         Message
                     </label>
@@ -290,127 +327,25 @@
                         placeholder="Describe what you need help with..."
                         required
                     ></textarea>
-<form
-    action="https://formsubmit.co/magazawatech@gmail.com"
-    method="POST"
->
-
-    <input
-        type="hidden"
-        name="_subject"
-        value="New MAGAZAWA TECH HUB Inquiry"
-    >
-
-    <input
-        type="hidden"
-        name="_captcha"
-        value="false"
-    >
-
-    <input
-        type="hidden"
-        name="_template"
-        value="table"
-    >
-
-    <label for="name">
-        Your Name
-    </label>
-
-    <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your name"
-        required
-    >
 
 
-    <label for="phone">
-        Phone Number
-    </label>
+                    <!-- SUBMIT -->
 
-    <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="Enter your phone number"
-        required
-    >
+                    <button
+                        type="submit"
+                        class="contact-button"
+                    >
+                        Send Inquiry
+                    </button>
 
-
-    <label for="service">
-        What do you need?
-    </label>
-
-    <select
-        id="service"
-        name="service"
-        required
-    >
-
-        <option value="">
-            Select an option
-        </option>
-
-        <option value="Project Guidance">
-            Project Guidance
-        </option>
-
-        <option value="Programming">
-            Programming
-        </option>
-
-        <option value="Electronics">
-            Electronics
-        </option>
-
-        <option value="Arduino">
-            Arduino
-        </option>
-
-        <option value="Web Development">
-            Web Development
-        </option>
-
-        <option value="Courses">
-            Courses
-        </option>
-
-        <option value="Other">
-            Other
-        </option>
-
-    </select>
-
-
-    <label for="message">
-        Message
-    </label>
-
-    <textarea
-        id="message"
-        name="message"
-        rows="6"
-        placeholder="Describe what you need help with..."
-        required
-    ></textarea>
-
-
-    <button
-        type="submit"
-        class="contact-button"
-    >
-        Send Inquiry
-    </button>
-
-</form>
+                </form>
 
             </div>
 
         </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -440,6 +375,7 @@
     </section>
 
 
+
     <!-- =========================
          FOOTER
     ========================== -->
@@ -458,8 +394,9 @@
     </footer>
 
 
+
     <!-- =========================
-         WHATSAPP FLOATING BUTTON
+         FLOATING WHATSAPP BUTTON
     ========================== -->
 
     <a
@@ -473,8 +410,12 @@
     </a>
 
 
+
+    <!-- JAVASCRIPT -->
+
     <script src="js/script.js"></script>
+
 
 </body>
 
-</html>
+    </html>
