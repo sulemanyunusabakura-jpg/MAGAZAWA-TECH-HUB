@@ -3150,3 +3150,48 @@ img {
 .technology-area-card p {
     line-height: 1.7;
 }
+
+/* =========================
+   TECHNOLOGY AREAS
+========================= */
+
+.technology-areas {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.technology-areas h2 {
+    margin-bottom: 15px;
+}
+
+.technology-areas-description {
+    max-width: 750px;
+    margin: 10px auto 40px;
+}
+
+.technology-areas-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.technology-area-card {
+    width: 240px;
+    padding: 28px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.technology-area-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.technology-area-card h3 {
+    margin-bottom: 12px;
+}
+
+.technology-area-card p {
+    line-height: 1.7;
+}
