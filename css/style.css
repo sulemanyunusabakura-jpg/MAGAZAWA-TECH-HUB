@@ -2590,3 +2590,75 @@ img {
     gap: 15px;
     flex-wrap: wrap;
 }
+
+/* =========================
+   REQUEST A QUOTE
+========================= */
+
+.quote-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.quote-section h2 {
+    margin-bottom: 15px;
+}
+
+.quote-description {
+    max-width: 700px;
+    margin: 10px auto 35px;
+}
+
+.quote-form {
+    max-width: 700px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+.quote-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    margin-bottom: 20px;
+
+    border: 2px solid #d5dce8;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+    outline: none;
+    border-color: #0b3d91;
+}
+
+.quote-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.quote-form button {
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
