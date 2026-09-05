@@ -2565,3 +2565,28 @@ img {
     }
 
 }
+
+/* =========================
+   HIRE US
+========================= */
+
+.hire-us {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hire-us h2 {
+    margin-bottom: 15px;
+}
+
+.hire-us > p {
+    max-width: 750px;
+    margin: 10px auto 30px;
+}
+
+.hire-us-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
