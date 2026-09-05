@@ -3255,3 +3255,58 @@ img {
 .learning-path-card p {
     line-height: 1.7;
 }
+
+/* =========================
+   HOMEPAGE FAQ
+========================= */
+
+.homepage-faq {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.homepage-faq h2 {
+    margin-bottom: 15px;
+}
+
+.homepage-faq-description {
+    max-width: 750px;
+    margin: 10px auto 40px;
+}
+
+.homepage-faq-container {
+    max-width: 900px;
+    margin: 0 auto 35px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.homepage-faq-item {
+    padding: 25px;
+
+    text-align: left;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.homepage-faq-item h3 {
+    margin-bottom: 12px;
+}
+
+.homepage-faq-item p {
+    line-height: 1.7;
+}
+
+
+@media (max-width: 650px) {
+
+    .homepage-faq-container {
+        grid-template-columns: 1fr;
+    }
+
+}
