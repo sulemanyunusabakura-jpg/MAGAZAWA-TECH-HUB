@@ -2943,3 +2943,48 @@ img {
     }
 
 }
+
+/* =========================
+   ABOUT MAGAZAWA TECH HUB
+========================= */
+
+.about-hub {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.about-hub h2 {
+    margin-bottom: 15px;
+}
+
+.about-hub-description {
+    max-width: 750px;
+    margin: 10px auto 40px;
+}
+
+.about-hub-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.about-hub-card {
+    width: 270px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.about-hub-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.about-hub-card h3 {
+    margin-bottom: 12px;
+}
+
+.about-hub-card p {
+    line-height: 1.7;
+}
