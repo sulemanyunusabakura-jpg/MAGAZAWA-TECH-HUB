@@ -2821,3 +2821,75 @@ img {
 .premium-course-card .cta-button {
     display: inline-block;
 }
+
+/* =========================
+   COURSE INTEREST FORM
+========================= */
+
+.course-interest {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.course-interest h2 {
+    margin-bottom: 15px;
+}
+
+.course-interest-description {
+    max-width: 700px;
+    margin: 10px auto 35px;
+}
+
+.course-interest-form {
+    max-width: 700px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+.course-interest-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.course-interest-form input,
+.course-interest-form select,
+.course-interest-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    margin-bottom: 20px;
+
+    border: 2px solid #d5dce8;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+}
+
+.course-interest-form input:focus,
+.course-interest-form select:focus,
+.course-interest-form textarea:focus {
+    outline: none;
+    border-color: #0b3d91;
+}
+
+.course-interest-form textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.course-interest-form button {
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
