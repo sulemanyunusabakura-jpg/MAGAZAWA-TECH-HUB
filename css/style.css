@@ -3666,3 +3666,33 @@ body {
     color: #0066cc;
     flex-shrink: 0; /* Prevents icon from squishing */
 }
+
+/* Project Filter Buttons */
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0 35px 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #4b5563;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #0066cc;
+    color: #ffffff;
+    border-color: #0066cc;
+}
+
+.latest-project-card.hide {
+    display: none;
+}
