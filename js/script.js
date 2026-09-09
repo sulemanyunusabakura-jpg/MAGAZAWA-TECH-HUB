@@ -1113,3 +1113,22 @@ if (themeToggleBtn) {
     }
 });
    
+/* FORCED DARK MODE OVERRIDES */
+body.dark-mode {
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode section,
+body.dark-mode div,
+body.dark-mode footer {
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode a {
+    color: #38bdf8 !important;
+}
+   
