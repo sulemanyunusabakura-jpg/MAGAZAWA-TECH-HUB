@@ -868,12 +868,12 @@ if (contactForm) {
         window.open(whatsappURL, "_blank");
     });
 
-    // 2. Standard Form Submit Event
-    contactForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        formStatus.style.color = "#16a34a";
-        formStatus.textContent = "Thank you! Your message has been prepared. We will get back to you shortly.";
-        contactForm.reset();
+    // Remove e.preventDefault() for email submission so Web3Forms can process it
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", () => {
+        // Form submits normally to Web3Forms and emails you directly
     });
 }
 
@@ -918,11 +918,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Remove e.preventDefault() for email submission so Web3Forms can process it
-const contactForm = document.getElementById("contactForm");
 
-if (contactForm) {
-    contactForm.addEventListener("submit", () => {
-        // Form submits normally to Web3Forms and emails you directly
-    });
-}
