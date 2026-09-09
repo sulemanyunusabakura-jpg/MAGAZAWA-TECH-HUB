@@ -3336,3 +3336,55 @@ img {
     gap: 15px;
     flex-wrap: wrap;
 }
+
+/* =========================
+   ONLINE PRESENCE
+========================= */
+
+.online-presence {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.online-presence h2 {
+    margin-bottom: 15px;
+}
+
+.online-presence-description {
+    max-width: 750px;
+    margin: 10px auto 40px;
+    line-height: 1.7;
+}
+
+.online-presence-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.online-presence-card {
+    width: 270px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.online-presence-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.online-presence-card h3 {
+    margin-bottom: 12px;
+}
+
+.online-presence-card p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.online-presence-card a {
+    font-weight: bold;
+    text-decoration: none;
+}
