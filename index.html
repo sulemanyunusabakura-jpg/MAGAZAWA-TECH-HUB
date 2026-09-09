@@ -870,34 +870,36 @@
             </div>
         </div>
 
-        <form id="contactForm" class="contact-form">
-            <div class="form-group">
-                <label for="userName">Your Name</label>
-                <input type="text" id="userName" placeholder="e.g. John Doe" required>
-            </div>
+       <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <!-- Replace YOUR_ACCESS_KEY_HERE with the key sent to your email -->
+    <input type="hidden" name="access_key" value="f7fcd21c-2445-4149-94f8-526fe88357ea">
 
-            <div class="form-group">
-                <label for="userService">Service / Interest</label>
-                <select id="userService" required>
-                    <option value="" disabled selected>Select a service...</option>
-                    <option value="Website Development">Website Development[cite: 1]</option>
-                    <option value="Arduino & Electronics">Arduino & Electronics[cite: 1]</option>
-                    <option value="Project Guidance">Project Guidance[cite: 1]</option>
-                    <option value="Courses & Learning">Courses & Learning[cite: 1]</option>
-                </select>
-            </div>
+    <div class="form-group">
+        <label for="userName">Your Name</label>
+        <input type="text" name="name" id="userName" placeholder="e.g. John Doe" required>
+    </div>
 
-            <div class="form-group">
-                <label for="userMessage">Project Details</label>
-                <textarea id="userMessage" rows="4" placeholder="Briefly describe what you want to build or learn..." required></textarea>
-            </div>
+    <div class="form-group">
+        <label for="userService">Service / Interest</label>
+        <select name="service" id="userService" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option value="Website Development">Website Development</option>
+            <option value="Arduino & Electronics">Arduino & Electronics[cite: 1]</option>
+            <option value="Project Guidance">Project Guidance[cite: 1]</option>
+            <option value="Courses & Learning">Courses & Learning[cite: 1]</option>
+        </select>
+    </div>
 
-            <div class="form-actions">
-                <button type="submit" class="submit-btn">Send Message</button>
-                <button type="button" id="sendWhatsAppBtn" class="whatsapp-alt-btn">Send via WhatsApp 💬</button>
-            </div>
-            <p id="formStatus" class="form-status"></p>
-        </form>
+    <div class="form-group">
+        <label for="userMessage">Project Details</label>
+        <textarea name="message" id="userMessage" rows="4" placeholder="Briefly describe what you want to build or learn..." required></textarea>
+    </div>
+
+    <div class="form-actions">
+        <button type="submit" class="submit-btn">Send Message</button>
+        <button type="button" id="sendWhatsAppBtn" class="whatsapp-alt-btn">Send via WhatsApp 💬</button>
+    </div>
+</form>
     </div>
 </section>
 
