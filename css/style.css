@@ -3441,3 +3441,55 @@ img {
 .quick-access-card p {
     line-height: 1.7;
 }
+
+/* =========================
+   HOW WE CAN HELP
+========================= */
+
+.help-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.help-section h2 {
+    margin-bottom: 15px;
+}
+
+.help-description {
+    max-width: 750px;
+    margin: 10px auto 40px;
+    line-height: 1.7;
+}
+
+.help-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.help-card {
+    width: 250px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.help-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.help-card h3 {
+    margin-bottom: 12px;
+}
+
+.help-card p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.help-card a {
+    font-weight: bold;
+    text-decoration: none;
+}
