@@ -918,4 +918,53 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Modal Functionality
+const detailsModal = document.getElementById("detailsModal");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modalTitle = document.getElementById("modalTitle");
+const modalCategory = document.getElementById("modalCategory");
+const modalBody = document.getElementById("modalBody");
+const modalActionBtn = document.getElementById("modalActionBtn");
 
+// Function to Open Modal
+function openModal(title, category, description, link) {
+    modalTitle.textContent = title;
+    modalCategory.textContent = category;
+    modalBody.innerHTML = `<p>${description}</p>`;
+    modalActionBtn.setAttribute("href", link);
+    
+    detailsModal.classList.add("active");
+    detailsModal.setAttribute("aria-hidden", "false");
+}
+
+// Function to Close Modal
+function closeModal() {
+    detailsModal.classList.remove("active");
+    detailsModal.setAttribute("aria-hidden", "true");
+}
+
+if (closeModalBtn) {
+    closeModalBtn.addEventListener("click", closeModal);
+}
+
+// Close when clicking outside content box
+if (detailsModal) {
+    detailsModal.addEventListener("click", (e) => {
+        if (e.target === detailsModal) closeModal();
+    });
+}
+
+// Attach Quick Preview to Project Cards
+document.querySelectorAll(".latest-project-card").forEach(card => {
+    const title = card.querySelector("h3") ? card.querySelector("h3").innerText : "Project Overview";
+    const category = card.getAttribute("data-category") || "Technology";
+    const description = card.querySelector("p") ? card.querySelector("p").innerText : "Detailed view coming soon.";
+    const link = card.querySelector("a") ? card.querySelector("a").getAttribute("href") : "#";
+
+    card.addEventListener("click", (e) => {
+        // Prevent opening modal if clicking direct page link
+        if (e.target.tagName !== "A") {
+            openModal(title, category.toUpperCase(), description, link);
+        }
+    });
+});
