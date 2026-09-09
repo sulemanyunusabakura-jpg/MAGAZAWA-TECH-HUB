@@ -879,24 +879,26 @@ if (contactForm) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // 1. Dark Mode Toggle with Local Storage
-    const themeToggleBtn = document.getElementById("themeToggleBtn");
-    
-    // Check saved theme preference
-    if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark-mode");
-        if (themeToggleBtn) themeToggleBtn.textContent = "☀️ Light";
-    }
+    // Persistent Dark Mode Logic
+const themeToggleBtn = document.getElementById("themeToggleBtn");
 
-    if (themeToggleBtn) {
-        themeToggleBtn.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-            const isDarkMode = document.body.classList.contains("dark-mode");
-            
-            themeToggleBtn.textContent = isDarkMode ? "☀️ Light" : "🌙 Dark";
-            localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-        });
-    }
+// 1. Apply saved theme on page load
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    if (themeToggleBtn) themeToggleBtn.textContent = "☀️ Light";
+}
+
+// 2. Toggle theme on button click
+if (themeToggleBtn) {
+    themeToggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        
+        // Update button text and save setting
+        themeToggleBtn.textContent = isDark ? "☀️ Light" : "🌙 Dark";
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+}
 
     // 2. Live Page Content Search
     const navSearchInput = document.getElementById("navSearchInput");
