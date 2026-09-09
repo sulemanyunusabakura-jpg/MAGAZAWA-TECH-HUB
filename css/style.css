@@ -3926,3 +3926,40 @@ body {
     cursor: pointer;
     color: #6b7280;
 }
+
+/* Theme Colors */
+:root {
+    --bg-primary: #ffffff;
+    --text-primary: #111827;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    --bg-primary: #0f172a !important;
+    --text-primary: #f8fafc !important;
+    --card-bg: #1e293b !important;
+    --border-color: #334155 !important;
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+}
+
+/* Ensure background transitions smoothly */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Apply dark mode to cards & header */
+body.dark-mode .navbar,
+body.dark-mode .course-card,
+body.dark-mode .latest-project-card,
+body.dark-mode .offer-card,
+body.dark-mode .contact-form,
+body.dark-mode .modal-content {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
