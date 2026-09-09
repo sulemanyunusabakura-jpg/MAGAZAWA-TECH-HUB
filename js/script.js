@@ -876,3 +876,44 @@ if (contactForm) {
         contactForm.reset();
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // 1. Dark Mode Toggle with Local Storage
+    const themeToggleBtn = document.getElementById("themeToggleBtn");
+    
+    // Check saved theme preference
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        if (themeToggleBtn) themeToggleBtn.textContent = "☀️ Light";
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            const isDarkMode = document.body.classList.contains("dark-mode");
+            
+            themeToggleBtn.textContent = isDarkMode ? "☀️ Light" : "🌙 Dark";
+            localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+        });
+    }
+
+    // 2. Live Page Content Search
+    const navSearchInput = document.getElementById("navSearchInput");
+    
+    if (navSearchInput) {
+        navSearchInput.addEventListener("input", (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            const searchableCards = document.querySelectorAll(".latest-project-card, .offer-card, .popular-service-card");
+
+            searchableCards.forEach(card => {
+                const textContent = card.textContent.toLowerCase();
+                if (textContent.includes(query)) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    }
+});
