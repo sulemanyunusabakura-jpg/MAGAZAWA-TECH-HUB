@@ -1,868 +1,292 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn practical technology skills through web development, JavaScript, Arduino, electronics, microcontroller and solar technology courses.">
+    <meta name="keywords" content="technology courses, Arduino course, web development course, JavaScript course, electronics course">
+    <meta name="author" content="SULEMAN YUNUSA">
+    <meta name="robots" content="index, follow">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Learn practical technology skills through web development, JavaScript, Arduino, electronics, microcontroller and solar technology courses."
-    >
-
-    <meta
-        name="keywords"
-        content="technology courses, Arduino course, web development course, JavaScript course, electronics course"
-    >
-
-    <meta
-        name="author"
-        content="SULEMAN YUNUSA"
-    >
-
-    <meta
-        name="robots"
-        content="index, follow"
-    >
-
-    <title>
-        Technology Courses | MAGAZAWA TECH HUB
-    </title>
-
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
-
+    <title>Technology Courses | MAGAZAWA TECH HUB</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-```
-<!-- =====================================================
-     NAVIGATION
-====================================================== -->
-
-<header class="navbar">
-
-    <div class="logo">
-        MAGAZAWA TECH HUB
-    </div>
-
-
-    <nav>
-
-        <a href="index.html">
-            Home
-        </a>
-
-        <a href="projects.html">
-            Projects
-        </a>
-
-        <a href="tutorials.html">
-            Tutorials
-        </a>
-
-        <a href="courses.html">
-            Courses
-        </a>
-
-        <a href="services.html">
-            Services
-        </a>
-
-        <a href="contact.html">
-            Contact
-        </a>
-
-    </nav>
-
-</header>
-
-
-
-<!-- =====================================================
-     PAGE HEADER
-====================================================== -->
-
-<section class="page-header">
-
-    <h1>
-        Our Technology Courses
-    </h1>
-
-    <p>
-        Build practical skills through structured
-        technology courses and hands-on learning.
-    </p>
-
-</section>
-
-
-
-<!-- =====================================================
-     COURSES
-====================================================== -->
-
-<section class="courses-section">
-
-    <p class="section-label">
-        LEARN WITH MAGAZAWA TECH HUB
-    </p>
-
-
-    <h2>
-        Available Courses
-    </h2>
-
-
-    <p class="section-description">
-        Search our courses or select a category
-        to find the technology skill you want to learn.
-    </p>
-
-
-
-    <!-- =================================================
-         LESSON 32 - SEARCH AND CATEGORY FILTER
-    ================================================== -->
-
-    <div class="course-tools">
-
-
-        <!-- SEARCH -->
-
-        <div class="course-search">
-
-            <label for="courseSearch">
-                Search Courses
-            </label>
-
-            <input
-                type="search"
-                id="courseSearch"
-                placeholder="Search for a course..."
-                autocomplete="off"
-            >
-
+    <!-- =====================================================
+         NAVIGATION (WITH SEARCH & DARK MODE TOGGLE)
+    ====================================================== -->
+    <header class="navbar">
+        <div class="logo">
+            MAGAZAWA TECH HUB
         </div>
 
-
-
-        <!-- CATEGORY -->
-
-        <div class="course-filter">
-
-            <label for="courseCategory">
-                Course Category
-            </label>
-
-            <select id="courseCategory">
-
-                <option value="all">
-                    All Courses
-                </option>
-
-                <option value="web">
-                    Web Development
-                </option>
-
-                <option value="programming">
-                    Programming
-                </option>
-
-                <option value="arduino">
-                    Arduino
-                </option>
-
-                <option value="electronics">
-                    Electronics
-                </option>
-
-                <option value="microcontroller">
-                    Microcontroller
-                </option>
-
-                <option value="solar">
-                    Solar Technology
-                </option>
-
-            </select>
-
+        <!-- Search Box -->
+        <div class="nav-search-box">
+            <input type="text" id="navSearchInput" placeholder="Search courses..." aria-label="Search site">
+            <span class="search-icon">🔍</span>
         </div>
 
-    </div>
-
-
-
-    <!-- =================================================
-         COURSE CONTAINER
-    ================================================== -->
-
-    <div
-        class="course-container"
-        id="courseContainer"
-    >
-
-
-
-        <!-- =================================================
-             COURSE 1 - WEB DEVELOPMENT
-        ================================================== -->
-
-        <div
-            class="course-card"
-            data-category="web"
-        >
-
-            <span class="course-label">
-                BEGINNER
-            </span>
-
-
-            <h3>
-                HTML &amp; CSS Web Design
-            </h3>
-
-
-            <p>
-                Learn how to create and style modern
-                webpages using HTML and CSS.
-            </p>
-
-
-            <h4>
-                Free
-            </h4>
-
-
-            <a
-    href="course-details/html-css-course.html"
-    class="course-button"
->
-    Start Course
-</a>
-
-        </div>
-
-
-
-        <!-- =================================================
-             COURSE 2 - PROGRAMMING
-        ================================================== -->
-
-        <div
-            class="course-card"
-            data-category="programming"
-        >
-
-            <span class="course-label">
-                BEGINNER
-            </span>
-
-
-            <h3>
-                JavaScript Programming
-            </h3>
-
-
-            <p>
-                Learn JavaScript fundamentals and how
-                to make websites interactive.
-            </p>
-
-
-            <h4>
-                Free
-            </h4>
-
-
-            <a
-                href="#"
-                class="course-button"
-            >
-                Start Course
-            </a>
-
-        </div>
-
-
-
-        <!-- =================================================
-             COURSE 3 - ARDUINO
-        ================================================== -->
-
-        <div
-            class="course-card premium"
-            data-category="arduino programming"
-        >
-
-            <span class="course-label">
-                PRACTICAL
-            </span>
-
-
-            <h3>
-                Arduino Programming
-            </h3>
-
-
-            <p>
-                Learn Arduino programming, sensors,
-                LEDs, displays and practical projects.
-            </p>
-
-
-            <h4>
-                Coming Soon
-            </h4>
-
-
-            <a
-                href="#"
-                class="course-button"
-            >
-                Learn More
-            </a>
-
-        </div>
-
-
-
-        <!-- =================================================
-             COURSE 4 - ELECTRONICS
-        ================================================== -->
-
-        <div
-            class="course-card"
-            data-category="electronics"
-        >
-
-            <span class="course-label">
-                BEGINNER
-            </span>
-
-
-            <h3>
-                Electronics Fundamentals
-            </h3>
-
-
-            <p>
-                Understand electronic components,
-                circuits, sensors and basic electronics.
-            </p>
-
-
-            <h4>
-                Coming Soon
-            </h4>
-
-
-            <a
-                href="#"
-                class="course-button"
-            >
-                Learn More
-            </a>
-
-        </div>
-
-
-
-        <!-- =================================================
-             COURSE 5 - MICROCONTROLLER
-        ================================================== -->
-
-        <div
-            class="course-card premium"
-            data-category="microcontroller programming"
-        >
-
-            <span class="course-label">
-                ADVANCED
-            </span>
-
-
-            <h3>
-                Microcontroller Programming
-            </h3>
-
-
-            <p>
-                Learn how microcontrollers work and
-                develop practical embedded systems.
-            </p>
-
-
-            <h4>
-                Coming Soon
-            </h4>
-
-
-            <a
-                href="#"
-                class="course-button"
-            >
-                Learn More
-            </a>
-
-        </div>
-
-
-
-        <!-- =================================================
-             COURSE 6 - SOLAR
-        ================================================== -->
-
-        <div
-            class="course-card"
-            data-category="solar electronics"
-        >
-
-            <span class="course-label">
-                PRACTICAL
-            </span>
-
-
-            <h3>
-                Solar Technology
-            </h3>
-
-
-            <p>
-                Learn the fundamentals of solar panels,
-                batteries, charge controllers and
-                solar systems.
-            </p>
-
-
-            <h4>
-                Coming Soon
-            </h4>
-
-
-            <a
-                href="#"
-                class="course-button"
-            >
-                Learn More
-            </a>
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- =================================================
-         NO RESULTS MESSAGE
-    ================================================== -->
-
-    <p
-        id="noCoursesMessage"
-        class="no-courses-message"
-        style="display: none;"
-    >
-        No courses found.
-    </p>
-
-
-</section>
-
-
-<!-- =========================
-     PREMIUM COURSES
-========================== -->
-
-<section class="premium-courses">
-
-    <p class="section-label">
-        PREMIUM LEARNING
-    </p>
-
-    <h2>
-        Take Your Skills to the Next Level
-    </h2>
-
-    <p class="premium-description">
-        Our upcoming premium courses will provide
-        structured lessons, practical projects and
-        step-by-step guidance.
-    </p>
-
-    <div class="premium-course-container">
-
-        <div class="premium-course-card">
-
-            <span class="course-badge">
-                COMING SOON
-            </span>
-
-            <h3>
-                Complete Arduino Programming
-            </h3>
-
-            <p>
-                Learn Arduino programming from the basics
-                to practical microcontroller projects.
-            </p>
-
-            <p class="course-price">
-                Coming Soon
-            </p>
-
-            <a
-                href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Arduino%20Programming%20course."
-                class="cta-button"
-                target="_blank"
-                rel="noopener"
-            >
-                Join Interest List
-            </a>
-
-        </div>
-
-
-        <div class="premium-course-card">
-
-            <span class="course-badge">
-                COMING SOON
-            </span>
-
-            <h3>
-                Web Development Masterclass
-            </h3>
-
-            <p>
-                Learn how to build responsive websites using
-                HTML, CSS and JavaScript.
-            </p>
-
-            <p class="course-price">
-                Coming Soon
-            </p>
-
-            <a
-                href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Web%20Development%20course."
-                class="cta-button"
-                target="_blank"
-                rel="noopener"
-            >
-                Join Interest List
-            </a>
-
-        </div>
-
-
-        <div class="premium-course-card">
-
-            <span class="course-badge">
-                COMING SOON
-            </span>
-
-            <h3>
-                Electronics & Microcontroller Projects
-            </h3>
-
-            <p>
-                Learn practical electronics and build
-                useful microcontroller-based projects.
-            </p>
-
-            <p class="course-price">
-                Coming Soon
-            </p>
-
-            <a
-                href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Electronics%20course."
-                class="cta-button"
-                target="_blank"
-                rel="noopener"
-            >
-                Join Interest List
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-  <!-- =========================
-     COURSE INTEREST FORM
-========================== -->
-
-<section class="course-interest">
-
-    <p class="section-label">
-        COURSE INTEREST
-    </p>
-
-    <h2>
-        Interested in a Future Course?
-    </h2>
-
-    <p class="course-interest-description">
-        Tell us which course you are interested in.
-        We will contact you when it becomes available.
-    </p>
-
-    <form
-        action="https://formsubmit.co/magazawatech@gmail.com"
-        method="POST"
-        class="course-interest-form"
-    >
-
-        <input
-            type="hidden"
-            name="_subject"
-            value="New MAGAZAWA TECH HUB Course Interest"
-        >
-
-        <input
-            type="hidden"
-            name="_captcha"
-            value="false"
-        >
-
-        <input
-            type="hidden"
-            name="_template"
-            value="table"
-        >
-
-        <label for="studentName">
-            Full Name
-        </label>
-
-        <input
-            type="text"
-            id="studentName"
-            name="name"
-            placeholder="Enter your name"
-            required
-        >
-
-
-        <label for="studentPhone">
-            Phone / WhatsApp
-        </label>
-
-        <input
-            type="tel"
-            id="studentPhone"
-            name="phone"
-            placeholder="Enter your phone number"
-            required
-        >
-
-
-        <label for="interestedCourse">
-            Course of Interest
-        </label>
-
-        <select
-            id="interestedCourse"
-            name="course"
-            required
-        >
-
-            <option value="">
-                Select a course
-            </option>
-
-            <option value="Arduino Programming">
-                Arduino Programming
-            </option>
-
-            <option value="Web Development">
-                Web Development
-            </option>
-
-            <option value="Electronics & Microcontroller Projects">
-                Electronics & Microcontroller Projects
-            </option>
-
-            <option value="JavaScript Programming">
-                JavaScript Programming
-            </option>
-
-            <option value="Other">
-                Other
-            </option>
-
-        </select>
-
-
-        <label for="studentMessage">
-            Message
-        </label>
-
-        <textarea
-            id="studentMessage"
-            name="message"
-            rows="5"
-            placeholder="Tell us what you would like to learn..."
-            required
-        ></textarea>
-
-
-        <button
-            type="submit"
-            class="cta-button"
-        >
-            Submit Interest
+        <button type="button" class="menu-button" id="menuButton" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
         </button>
 
-    </form>
-
-</section>
-
-
-    
-<!-- =====================================================
-     MEMBERSHIP
-====================================================== -->
-
-<section class="membership">
-
-    <h2>
-        Want to Learn More?
-    </h2>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="courses.html">Courses</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <button id="themeToggleBtn" class="theme-toggle-btn" type="button">🌙 Dark</button>
+        </nav>
+    </header>
 
 
-    <p>
-        Join MAGAZAWA TECH HUB and continue developing
-        your technology skills through practical
-        tutorials, courses and projects.
-    </p>
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+    <section class="page-header">
+        <h1>Our Technology Courses</h1>
+        <p>Build practical skills through structured technology courses and hands-on learning.</p>
+    </section>
 
 
-    <a
-        href="contact.html"
-        class="membership-button"
-    >
-        Contact Us
-    </a>
+    <!-- =====================================================
+         COURSES
+    ====================================================== -->
+    <section class="courses-section">
+        <p class="section-label">LEARN WITH MAGAZAWA TECH HUB</p>
+        <h2>Available Courses</h2>
+        <p class="section-description">Search our courses or select a category to find the technology skill you want to learn.</p>
 
-</section>
+        <!-- SEARCH AND CATEGORY FILTER -->
+        <div class="course-tools">
+            <div class="course-search">
+                <label for="courseSearch">Search Courses</label>
+                <input type="search" id="courseSearch" placeholder="Search for a course..." autocomplete="off">
+            </div>
 
+            <div class="course-filter">
+                <label for="courseCategory">Course Category</label>
+                <select id="courseCategory">
+                    <option value="all">All Courses</option>
+                    <option value="web">Web Development</option>
+                    <option value="programming">Programming</option>
+                    <option value="arduino">Arduino</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="microcontroller">Microcontroller</option>
+                    <option value="solar">Solar Technology</option>
+                </select>
+            </div>
+        </div>
 
-<!-- =========================
-     COURSE FAQ
-========================== -->
+        <!-- COURSE CONTAINER -->
+        <div class="course-container" id="courseContainer">
 
-<section class="course-faq">
+            <!-- COURSE 1 -->
+            <div class="course-card" data-category="web">
+                <span class="course-label">BEGINNER</span>
+                <h3>HTML &amp; CSS Web Design</h3>
+                <p>Learn how to create and style modern webpages using HTML and CSS.</p>
+                <h4>Free</h4>
+                <a href="course-details/html-css-course.html" class="course-button">Start Course</a>
+            </div>
 
-    <p class="section-label">
-        FREQUENTLY ASKED QUESTIONS
-    </p>
+            <!-- COURSE 2 -->
+            <div class="course-card" data-category="programming">
+                <span class="course-label">BEGINNER</span>
+                <h3>JavaScript Programming</h3>
+                <p>Learn JavaScript fundamentals and how to make websites interactive.</p>
+                <h4>Free</h4>
+                <a href="#" class="course-button">Start Course</a>
+            </div>
 
-    <h2>
-        Course Questions
-    </h2>
+            <!-- COURSE 3 -->
+            <div class="course-card premium" data-category="arduino programming">
+                <span class="course-label">PRACTICAL</span>
+                <h3>Arduino Programming</h3>
+                <p>Learn Arduino programming, sensors, LEDs, displays and practical projects.</p>
+                <h4>Coming Soon</h4>
+                <a href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Arduino%20Programming%20course." target="_blank" rel="noopener" class="course-button">Learn More</a>
+            </div>
 
-    <div class="faq-container">
+            <!-- COURSE 4 -->
+            <div class="course-card" data-category="electronics">
+                <span class="course-label">BEGINNER</span>
+                <h3>Electronics Fundamentals</h3>
+                <p>Understand electronic components, circuits, sensors and basic electronics.</p>
+                <h4>Coming Soon</h4>
+                <a href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Electronics%20Fundamentals%20course." target="_blank" rel="noopener" class="course-button">Learn More</a>
+            </div>
 
-        <div class="faq-item">
+            <!-- COURSE 5 -->
+            <div class="course-card premium" data-category="microcontroller programming">
+                <span class="course-label">ADVANCED</span>
+                <h3>Microcontroller Programming</h3>
+                <p>Learn how microcontrollers work and develop practical embedded systems.</p>
+                <h4>Coming Soon</h4>
+                <a href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Microcontroller%20Programming%20course." target="_blank" rel="noopener" class="course-button">Learn More</a>
+            </div>
 
-            <h3>
-                Are the courses available now?
-            </h3>
-
-            <p>
-                Some beginner courses are available,
-                while selected practical courses are
-                currently being prepared.
-            </p>
+            <!-- COURSE 6 -->
+            <div class="course-card" data-category="solar electronics">
+                <span class="course-label">PRACTICAL</span>
+                <h3>Solar Technology</h3>
+                <p>Learn the fundamentals of solar panels, batteries, charge controllers and solar systems.</p>
+                <h4>Coming Soon</h4>
+                <a href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Solar%20Technology%20course." target="_blank" rel="noopener" class="course-button">Learn More</a>
+            </div>
 
         </div>
 
+        <p id="noCoursesMessage" class="no-courses-message" style="display: none;">No courses found.</p>
+    </section>
 
-        <div class="faq-item">
 
-            <h3>
-                Do I need previous experience?
-            </h3>
+    <!-- =========================
+         PREMIUM COURSES
+    ========================== -->
+    <section class="premium-courses">
+        <p class="section-label">PREMIUM LEARNING</p>
+        <h2>Take Your Skills to the Next Level</h2>
+        <p class="premium-description">Our upcoming premium courses will provide structured lessons, practical projects and step-by-step guidance.</p>
 
-            <p>
-                No. Beginner courses are designed to
-                introduce the fundamentals step by step.
-            </p>
+        <div class="premium-course-container">
+            <div class="premium-course-card">
+                <span class="course-badge">COMING SOON</span>
+                <h3>Complete Arduino Programming</h3>
+                <p>Learn Arduino programming from the basics to practical microcontroller projects.</p>
+                <p class="course-price">Coming Soon</p>
+                <a href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Arduino%20Programming%20course." class="cta-button" target="_blank" rel="noopener">Join Interest List</a>
+            </div>
 
+            <div class="premium-course-card">
+                <span class="course-badge">COMING SOON</span>
+                <h3>Web Development Masterclass</h3>
+                <p>Learn how to build responsive websites using HTML, CSS and JavaScript.</p>
+                <p class="course-price">Coming Soon</p>
+                <a href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Web%20Development%20course." class="cta-button" target="_blank" rel="noopener">Join Interest List</a>
+            </div>
+
+            <div class="premium-course-card">
+                <span class="course-badge">COMING SOON</span>
+                <h3>Electronics & Microcontroller Projects</h3>
+                <p>Learn practical electronics and build useful microcontroller-based projects.</p>
+                <p class="course-price">Coming Soon</p>
+                <a href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20am%20interested%20in%20the%20Electronics%20course." class="cta-button" target="_blank" rel="noopener">Join Interest List</a>
+            </div>
         </div>
+    </section>
 
 
-        <div class="faq-item">
+    <!-- =========================
+         COURSE INTEREST FORM
+    ========================== -->
+    <section class="course-interest">
+        <p class="section-label">COURSE INTEREST</p>
+        <h2>Interested in a Future Course?</h2>
+        <p class="course-interest-description">Tell us which course you are interested in. We will contact you when it becomes available.</p>
 
-            <h3>
-                Will practical projects be included?
-            </h3>
+        <form action="https://api.web3forms.com/submit" method="POST" class="course-interest-form">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
 
-            <p>
-                Selected practical courses will include
-                projects and hands-on exercises.
-            </p>
+            <label for="studentName">Full Name</label>
+            <input type="text" id="studentName" name="name" placeholder="Enter your name" required>
 
+            <label for="studentPhone">Phone / WhatsApp</label>
+            <input type="tel" id="studentPhone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="interestedCourse">Course of Interest</label>
+            <select id="interestedCourse" name="course" required>
+                <option value="">Select a course</option>
+                <option value="Arduino Programming">Arduino Programming</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Electronics & Microcontroller Projects">Electronics & Microcontroller Projects</option>
+                <option value="JavaScript Programming">JavaScript Programming</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="studentMessage">Message</label>
+            <textarea id="studentMessage" name="message" rows="5" placeholder="Tell us what you would like to learn..." required></textarea>
+
+            <button type="submit" class="cta-button">Submit Interest</button>
+        </form>
+    </section>
+
+
+    <!-- =====================================================
+         MEMBERSHIP
+    ====================================================== -->
+    <section class="membership">
+        <h2>Want to Learn More?</h2>
+        <p>Join MAGAZAWA TECH HUB and continue developing your technology skills through practical tutorials, courses and projects.</p>
+        <a href="contact.html" class="membership-button">Contact Us</a>
+    </section>
+
+
+    <!-- =========================
+         COURSE FAQ
+    ========================== -->
+    <section class="course-faq">
+        <p class="section-label">FREQUENTLY ASKED QUESTIONS</p>
+        <h2>Course Questions</h2>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>Are the courses available now?</h3>
+                <p>Some beginner courses are available, while selected practical courses are currently being prepared.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do I need previous experience?</h3>
+                <p>No. Beginner courses are designed to introduce the fundamentals step by step.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Will practical projects be included?</h3>
+                <p>Selected practical courses will include projects and hands-on exercises.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How can I know when a course launches?</h3>
+                <p>Submit the Course Interest form and we can contact you when the course becomes available.</p>
+            </div>
         </div>
+    </section>
 
 
-        <div class="faq-item">
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer>
+        <p>&copy; 2026 MAGAZAWA TECH HUB. All Rights Reserved.</p>
+        <p>SULEMAN YUNUSA</p>
+    </footer>
 
-            <h3>
-                How can I know when a course launches?
-            </h3>
 
-            <p>
-                Submit the Course Interest form and we
-                can contact you when the course becomes available.
-            </p>
-
+    <!-- =====================================================
+         MODAL OVERLAY (DYNAMIC PREVIEW POPUP)
+    ====================================================== -->
+    <div id="detailsModal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content">
+            <button id="closeModalBtn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+            <h3 id="modalTitle">Course Overview</h3>
+            <p id="modalCategory" class="modal-badge">COURSE</p>
+            <div id="modalBody" class="modal-body">
+                <p>Course details loading...</p>
+            </div>
+            <div class="modal-footer">
+                <a id="modalActionBtn" href="#" class="cta-button">Start Learning →</a>
+            </div>
         </div>
-
     </div>
 
-</section>
 
-
-    
-<!-- =====================================================
-     FOOTER
-====================================================== -->
-
-<footer>
-
-    <p>
-        &copy; 2026 MAGAZAWA TECH HUB.
-        All Rights Reserved.
-    </p>
-
-
-    <p>
-        SULEMAN YUNUSA
-    </p>
-
-</footer>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-====================================================== -->
-
-<script src="js/script.js"></script>
-```
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
 
 </body>
-
-</html>
+    </html>
