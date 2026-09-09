@@ -917,3 +917,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Remove e.preventDefault() for email submission so Web3Forms can process it
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", () => {
+        // Form submits normally to Web3Forms and emails you directly
+    });
+}
