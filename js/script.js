@@ -842,3 +842,37 @@ filterButtons.forEach(button => {
         });
     });
 });
+
+// Contact Form Handler
+const contactForm = document.getElementById("contactForm");
+const sendWhatsAppBtn = document.getElementById("sendWhatsAppBtn");
+const formStatus = document.getElementById("formStatus");
+
+if (contactForm) {
+    // 1. Direct WhatsApp Message Generator
+    sendWhatsAppBtn.addEventListener("click", () => {
+        const name = document.getElementById("userName").value.trim();
+        const service = document.getElementById("userService").value;
+        const message = document.getElementById("userMessage").value.trim();
+
+        if (!name || !service || !message) {
+            formStatus.style.color = "#dc2626";
+            formStatus.textContent = "Please fill in all fields before sending via WhatsApp.";
+            return;
+        }
+
+        const encodedText = encodeURIComponent(
+            `Hello MAGAZAWA TECH HUB,\n\nMy name is ${name}.\nI am interested in: ${service}\n\nProject Details:\n${message}`
+        );
+        const whatsappURL = `https://wa.me/2349137373578?text=${encodedText}`;
+        window.open(whatsappURL, "_blank");
+    });
+
+    // 2. Standard Form Submit Event
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        formStatus.style.color = "#16a34a";
+        formStatus.textContent = "Thank you! Your message has been prepared. We will get back to you shortly.";
+        contactForm.reset();
+    });
+}
