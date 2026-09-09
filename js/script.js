@@ -819,3 +819,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// Filter Projects Logic
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".latest-project-card");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const targetCategory = button.getAttribute("data-category");
+
+        projectCards.forEach(card => {
+            const cardCategory = card.getAttribute("data-category");
+            
+            if (targetCategory === "all" || cardCategory === targetCategory) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
