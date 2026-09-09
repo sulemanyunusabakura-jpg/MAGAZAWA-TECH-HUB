@@ -837,52 +837,67 @@
 
 
     
-
-
-    <!-- =========================
-     CONTACT CTA
+   <!-- =========================
+     INTERACTIVE CONTACT SECTION
 ========================== -->
+<section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <p class="section-label">GET IN TOUCH</p>
+            <h2>Let's Discuss Your Next Technology Project</h2>
+            <p>Have a project idea, need a custom website, or looking for practical project guidance? Send a message directly or chat with us on WhatsApp.</p>
+            
+            <div class="quick-contact-methods">
+                <div class="contact-method-item">
+                    <span class="method-icon">📱</span>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <p>+234 913 737 3578</p>
+                    </div>
+                </div>
+                <div class="contact-method-item">
+                    <span class="method-icon">✉️</span>
+                    <div>
+                        <strong>Email</strong>
+                        <p>magazawatech@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<section class="contact-cta">
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" placeholder="e.g. John Doe" required>
+            </div>
 
-    <p class="section-label">
-        CONTACT US
-    </p>
+            <div class="form-group">
+                <label for="userService">Service / Interest</label>
+                <select id="userService" required>
+                    <option value="" disabled selected>Select a service...</option>
+                    <option value="Website Development">Website Development[cite: 1]</option>
+                    <option value="Arduino & Electronics">Arduino & Electronics[cite: 1]</option>
+                    <option value="Project Guidance">Project Guidance[cite: 1]</option>
+                    <option value="Courses & Learning">Courses & Learning[cite: 1]</option>
+                </select>
+            </div>
 
-    <h2>
-        Let's Work on Your Next Technology Project
-    </h2>
+            <div class="form-group">
+                <label for="userMessage">Project Details</label>
+                <textarea id="userMessage" rows="4" placeholder="Briefly describe what you want to build or learn..." required></textarea>
+            </div>
 
-    <p class="contact-cta-description">
-        Have a project idea, need a website, want to learn
-        a technology skill or need project guidance?
-        Get in touch with MAGAZAWA TECH HUB.
-    </p>
-
-    <div class="contact-cta-buttons">
-
-        <a
-            href="contact.html"
-            class="cta-button"
-        >
-            Contact Us
-        </a>
-
-        <a
-            href="https://wa.me/2349137373578?text=Hello%20MAGAZAWA%20TECH%20HUB%2C%20I%20would%20like%20to%20discuss%20a%20technology%20project."
-            class="cta-button"
-            target="_blank"
-            rel="noopener"
-        >
-            Chat on WhatsApp
-        </a>
-
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="button" id="sendWhatsAppBtn" class="whatsapp-alt-btn">Send via WhatsApp 💬</button>
+            </div>
+            <p id="formStatus" class="form-status"></p>
+        </form>
     </div>
-
 </section>
 
 
-
+    
     <!-- =========================
      ONLINE PRESENCE
 ========================== -->
