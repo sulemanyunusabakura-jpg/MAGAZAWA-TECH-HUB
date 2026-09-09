@@ -3802,3 +3802,74 @@ body {
     font-weight: 600;
     font-size: 0.9rem;
 }
+
+/* Dark Mode CSS Variables */
+:root {
+    --bg-primary: #ffffff;
+    --text-primary: #111827;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+}
+
+body.dark-mode {
+    --bg-primary: #0f172a;
+    --text-primary: #f8fafc;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Updated Navbar Alignment */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 25px;
+}
+
+.nav-search-box {
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+}
+
+.nav-search-box input {
+    width: 100%;
+    padding: 8px 35px 8px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-primary);
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.nav-search-box .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.85rem;
+    pointer-events: none;
+}
+
+.theme-toggle-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+    border-color: #0066cc;
+}
