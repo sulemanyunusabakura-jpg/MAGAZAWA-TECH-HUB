@@ -3873,3 +3873,75 @@ body {
 .theme-toggle-btn:hover {
     border-color: #0066cc;
 }
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Modal Content Box */
+.modal-content {
+    background: var(--card-bg, #ffffff);
+    color: var(--text-primary, #111827);
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 550px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text-primary, #111827);
+}
+
+.modal-badge {
+    display: inline-block;
+    background: #0066cc;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin: 8px 0 15px 0;
+    font-weight: 600;
+}
+
+.modal-body {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    text-align: right;
+}
