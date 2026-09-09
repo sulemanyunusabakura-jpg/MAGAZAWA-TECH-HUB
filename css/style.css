@@ -3625,3 +3625,44 @@ body {
     border-radius: 20px;
     cursor: pointer;
 }
+
+/* Fix FAQ card grid alignment & spacing */
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; /* Keeps text away from the + sign */
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #111827;
+    cursor: pointer;
+    text-align: left;
+}
+
+.faq-icon {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0066cc;
+    flex-shrink: 0; /* Prevents icon from squishing */
+}
