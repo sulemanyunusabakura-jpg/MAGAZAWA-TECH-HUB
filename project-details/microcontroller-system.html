@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microcontroller Automation System | MAGAZAWA TECH HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">MAGAZAWA TECH HUB</div>
+        
+        <div class="nav-search-box">
+            <input type="text" id="navSearchInput" placeholder="Search projects..." aria-label="Search site">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <nav id="mainNav">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../tutorials.html">Tutorials</a>
+            <a href="../courses.html">Courses</a>
+            <a href="../services.html">Services</a>
+            <a href="../contact.html">Contact</a>
+            <button id="themeToggleBtn" class="theme-toggle-btn" type="button">🌙 Dark</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="project-detail-container" style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
+        <span class="modal-badge" style="background:#0066cc; color:#fff; padding:4px 12px; border-radius:12px; font-weight:bold; font-size:0.8rem;">EMBEDDED SYSTEMS</span>
+        
+        <h1 style="margin-top: 15px;">Smart Microcontroller Load Switcher</h1>
+        <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px;">
+            An automated microcontroller load management and environmental monitoring system built to safely control high-power electrical equipment via sensor thresholds.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            
+            <!-- Hardware Components Box -->
+            <div style="background: var(--card-bg, #fff); border: 1px solid var(--border-color, #e5e7eb); border-radius: 12px; padding: 20px;">
+                <h3>🛠️ Required Components</h3>
+                <ul style="line-height: 1.8; margin-top: 10px; padding-left: 20px;">
+                    <li>ATmega328P / PIC / ESP Microcontroller</li>
+                    <li>Optocoupler Isolated Relay Module</li>
+                    <li>DHT11 / DHT22 Temperature & Humidity Sensor</li>
+                    <li>16x2 I2C Character LCD</li>
+                    <li>5V Regulated Power Supply Circuit</li>
+                </ul>
+            </div>
+
+            <!-- Features & GitHub Box -->
+            <div style="background: var(--card-bg, #fff); border: 1px solid var(--border-color, #e5e7eb); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <h3>📌 Key Features</h3>
+                    <ul style="line-height: 1.8; margin-top: 10px; padding-left: 20px;">
+                        <li>Automated relay switching based on temperature thresholds</li>
+                        <li>Optocoupler isolation for microcontroller protection</li>
+                        <li>EEPROM state memory to restore settings after power outages</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/sulemanyunusabakura-jpg/MAGAZAWA-TECH-HUB" target="_blank" rel="noopener" class="submit-btn" style="display: inline-block; text-align: center; text-decoration: none; padding: 10px 20px; background: #0066cc; color: white; border-radius: 8px; font-weight: bold;">
+                        View Code on GitHub ↗
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
