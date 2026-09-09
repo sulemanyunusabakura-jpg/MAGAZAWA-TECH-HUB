@@ -968,3 +968,145 @@ document.querySelectorAll(".latest-project-card").forEach(card => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // =====================================================
+    // 1. PERSISTENT DARK / LIGHT MODE
+    // =====================================================
+    const themeToggleBtn = document.getElementById("themeToggleBtn");
+    
+    // Check saved local storage preference
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        if (themeToggleBtn) themeToggleBtn.textContent = "☀️ Light";
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            const isDarkMode = document.body.classList.contains("dark-mode");
+            themeToggleBtn.textContent = isDarkMode ? "☀️ Light" : "🌙 Dark";
+            localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+        });
+    }
+
+    // =====================================================
+    // 2. LIVE HEADER SEARCH
+    // =====================================================
+    const navSearchInput = document.getElementById("navSearchInput");
+    
+    if (navSearchInput) {
+        navSearchInput.addEventListener("input", (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            const searchableItems = document.querySelectorAll(
+                ".latest-project-card, .offer-card, .popular-service-card, .course-card, .tutorial-card"
+            );
+
+            searchableItems.forEach(item => {
+                const textContent = item.textContent.toLowerCase();
+                item.style.display = textContent.includes(query) ? "" : "none";
+            });
+        });
+    }
+
+    // =====================================================
+    // 3. COURSES PAGE IN-SECTION SEARCH & FILTER
+    // =====================================================
+    const courseSearch = document.getElementById("courseSearch");
+    const courseCategory = document.getElementById("courseCategory");
+    const courseCards = document.querySelectorAll("#courseContainer .course-card");
+    const noCoursesMessage = document.getElementById("noCoursesMessage");
+
+    function filterCourses() {
+        if (!courseCards.length) return;
+
+        const searchQuery = courseSearch ? courseSearch.value.toLowerCase().trim() : "";
+        const selectedCategory = courseCategory ? courseCategory.value : "all";
+        let visibleCount = 0;
+
+        courseCards.forEach(card => {
+            const categoryData = card.getAttribute("data-category") || "";
+            const cardText = card.textContent.toLowerCase();
+
+            const matchesCategory = (selectedCategory === "all") || categoryData.includes(selectedCategory);
+            const matchesSearch = cardText.includes(searchQuery);
+
+            if (matchesCategory && matchesSearch) {
+                card.style.display = "";
+                visibleCount++;
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        if (noCoursesMessage) {
+            noCoursesMessage.style.display = visibleCount === 0 ? "block" : "none";
+        }
+    }
+
+    if (courseSearch) courseSearch.addEventListener("input", filterCourses);
+    if (courseCategory) courseCategory.addEventListener("change", filterCourses);
+
+    // =====================================================
+    // 4. QUICK PREVIEW MODAL LOGIC
+    // =====================================================
+    const detailsModal = document.getElementById("detailsModal");
+    const closeModalBtn = document.getElementById("closeModalBtn");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalCategory = document.getElementById("modalCategory");
+    const modalBody = document.getElementById("modalBody");
+    const modalActionBtn = document.getElementById("modalActionBtn");
+
+    function openModal(title, category, description, link) {
+        if (!detailsModal) return;
+        if (modalTitle) modalTitle.textContent = title;
+        if (modalCategory) modalCategory.textContent = category;
+        if (modalBody) modalBody.innerHTML = `<p>${description}</p>`;
+        if (modalActionBtn) modalActionBtn.setAttribute("href", link);
+
+        detailsModal.classList.add("active");
+        detailsModal.setAttribute("aria-hidden", "false");
+    }
+
+    function closeModal() {
+        if (!detailsModal) return;
+        detailsModal.classList.remove("active");
+        detailsModal.setAttribute("aria-hidden", "true");
+    }
+
+    if (closeModalBtn) closeModalBtn.addEventListener("click", closeModal);
+    if (detailsModal) {
+        detailsModal.addEventListener("click", (e) => {
+            if (e.target === detailsModal) closeModal();
+        });
+    }
+
+    // Attach quick preview click handlers to cards
+    document.querySelectorAll(".latest-project-card, .offer-card").forEach(card => {
+        card.addEventListener("click", (e) => {
+            if (e.target.tagName !== "A" && e.target.tagName !== "BUTTON") {
+                const title = card.querySelector("h3") ? card.querySelector("h3").innerText : "Overview";
+                const category = card.getAttribute("data-category") || "TECH HUB";
+                const description = card.querySelector("p") ? card.querySelector("p").innerText : "Explore more details about this section.";
+                const link = card.querySelector("a") ? card.querySelector("a").getAttribute("href") : "#";
+
+                openModal(title, category.toUpperCase(), description, link);
+            }
+        });
+    });
+
+    // =====================================================
+    // 5. MOBILE MENU TOGGLE
+    // =====================================================
+    const menuButton = document.getElementById("menuButton");
+    const mainNav = document.getElementById("mainNav");
+
+    if (menuButton && mainNav) {
+        menuButton.addEventListener("click", () => {
+            const isOpen = mainNav.classList.toggle("open");
+            menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+    }
+});
+   
