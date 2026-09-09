@@ -3310,3 +3310,29 @@ img {
     }
 
 }
+
+/* =========================
+   CONTACT CTA
+========================= */
+
+.contact-cta {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-cta h2 {
+    margin-bottom: 15px;
+}
+
+.contact-cta-description {
+    max-width: 750px;
+    margin: 10px auto 30px;
+    line-height: 1.7;
+}
+
+.contact-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
