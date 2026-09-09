@@ -744,3 +744,78 @@ if (
     );
 
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // 1. FAQ Accordion Functionality
+    const faqQuestions = document.querySelectorAll(".faq-question");
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener("click", () => {
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector(".faq-icon");
+            
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                icon.textContent = "+";
+            } else {
+                document.querySelectorAll(".faq-answer").forEach(item => item.style.maxHeight = null);
+                document.querySelectorAll(".faq-icon").forEach(item => item.textContent = "+");
+                
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                icon.textContent = "−";
+            }
+        });
+    });
+
+    // 2. Add Dark Mode Switcher to Navbar
+    const navbar = document.querySelector(".navbar");
+    if (navbar) {
+        const themeBtn = document.createElement("button");
+        themeBtn.className = "theme-toggle-btn";
+        themeBtn.innerHTML = "🌙 Dark";
+        navbar.appendChild(themeBtn);
+
+        themeBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                themeBtn.innerHTML = "☀️ Light";
+            } else {
+                themeBtn.innerHTML = "🌙 Dark";
+            }
+        });
+    }
+
+    // 3. Animated Number Counter for Stats Section
+    const statsNumbers = document.querySelectorAll(".stats-number");
+    let animated = false;
+
+    window.addEventListener("scroll", () => {
+        const statsSection = document.querySelector(".website-stats");
+        if (!statsSection) return;
+        
+        const sectionPos = statsSection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight;
+
+        if (sectionPos < screenPos && !animated) {
+            statsNumbers.forEach(stat => {
+                const target = parseInt(stat.innerText);
+                if (isNaN(target)) return;
+                
+                let count = 0;
+                const speed = 50;
+                const updateCount = () => {
+                    if (count < target) {
+                        count++;
+                        stat.innerText = count + "+";
+                        setTimeout(updateCount, speed);
+                    } else {
+                        stat.innerText = target + "+";
+                    }
+                };
+                updateCount();
+            });
+            animated = true;
+        }
+    });
+});
