@@ -1,386 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        Lithium-Ion Battery Charger |
-        MAGAZAWA TECH HUB
-    </title>
-
-    <link
-        rel="stylesheet"
-        href="../css/style.css"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lithium-Ion Battery Charger | MAGAZAWA TECH HUB</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
-
 <body>
 
-
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
+    <!-- Header Navigation -->
     <header class="navbar">
-
-        <div class="logo">
-            MAGAZAWA TECH HUB
+        <div class="logo">MAGAZAWA TECH HUB</div>
+        
+        <div class="nav-search-box">
+            <input type="text" id="navSearchInput" placeholder="Search projects..." aria-label="Search site">
+            <span class="search-icon">🔍</span>
         </div>
 
-        <nav>
-
-            <a href="../index.html">
-                Home
-            </a>
-
-            <a href="../projects.html">
-                Projects
-            </a>
-
-            <a href="../tutorials.html">
-                Tutorials
-            </a>
-
-            <a href="../courses.html">
-                Courses
-            </a>
-
-            <a href="../services.html">
-                Services
-            </a>
-
-            <a href="../contact.html">
-                Contact
-            </a>
-
+        <nav id="mainNav">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../tutorials.html">Tutorials</a>
+            <a href="../courses.html">Courses</a>
+            <a href="../services.html">Services</a>
+            <a href="../contact.html">Contact</a>
+            <button id="themeToggleBtn" class="theme-toggle-btn" type="button">🌙 Dark</button>
         </nav>
-
     </header>
 
-
-    <!-- =========================
-         PROJECT HEADER
-    ========================== -->
-
-    <section class="page-header">
-
-        <h1>
-            Automatic Lithium-Ion Battery Charger
-        </h1>
-
-        <p>
-            Microcontroller-based battery charging
-            and monitoring system.
+    <!-- Main Content -->
+    <main class="project-detail-container" style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
+        <span class="modal-badge" style="background:#0066cc; color:#fff; padding:4px 12px; border-radius:12px; font-weight:bold; font-size:0.8rem;">HARDWARE PROJECT</span>
+        
+        <h1 style="margin-top: 15px;">Lithium-Ion Battery Charger & Monitor</h1>
+        <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px;">
+            A microcontroller-based automatic charging system with real-time voltage monitoring and auto-cut-off protection to prevent overcharging.
         </p>
 
-    </section>
-
-
-    <!-- =========================
-         PROJECT CONTENT
-    ========================== -->
-
-    <main class="project-details">
-
-
-        <!-- OVERVIEW -->
-
-        <section class="detail-section">
-
-            <h2>
-                Project Overview
-            </h2>
-
-            <p>
-                This project presents a microcontroller-based
-                automatic charging system designed for
-                lithium-ion batteries. The system monitors
-                charging conditions and provides automatic
-                control of the charging process.
-            </p>
-
-            <p>
-                A display can be used to provide information
-                such as battery voltage, charging status and
-                temperature to the user.
-            </p>
-
-        </section>
-
-
-        <!-- AIM -->
-
-        <section class="detail-section">
-
-            <h2>
-                Aim of the Project
-            </h2>
-
-            <p>
-                The aim of this project is to develop an
-                automatic lithium-ion battery charging system
-                capable of monitoring charging conditions and
-                controlling the charging process.
-            </p>
-
-        </section>
-
-
-        <!-- OBJECTIVES -->
-
-        <section class="detail-section">
-
-            <h2>
-                Objectives
-            </h2>
-
-            <ul>
-
-                <li>
-                    Monitor battery charging conditions.
-                </li>
-
-                <li>
-                    Display useful battery information.
-                </li>
-
-                <li>
-                    Automatically control the charging process.
-                </li>
-
-                <li>
-                    Monitor battery temperature.
-                </li>
-
-                <li>
-                    Provide a practical microcontroller-based
-                    charging system.
-                </li>
-
-            </ul>
-
-        </section>
-
-
-        <!-- COMPONENTS -->
-
-        <section class="detail-section">
-
-            <h2>
-                Main Components
-            </h2>
-
-            <ul>
-
-                <li>
-                    Arduino Uno
-                </li>
-
-                <li>
-                    Lithium-ion battery
-                </li>
-
-                <li>
-                    Charging control circuit
-                </li>
-
-                <li>
-                    Temperature sensor
-                </li>
-
-                <li>
-                    16×2 LCD display
-                </li>
-
-                <li>
-                    Relay or electronic switching device
-                </li>
-
-                <li>
-                    Voltage measurement circuit
-                </li>
-
-                <li>
-                    Connecting wires
-                </li>
-
-            </ul>
-
-        </section>
-
-
-        <!-- WORKING PRINCIPLE -->
-
-        <section class="detail-section">
-
-            <h2>
-                How the System Works
-            </h2>
-
-            <p>
-                The microcontroller receives information
-                from the battery monitoring and temperature
-                sensing circuits.
-            </p>
-
-            <p>
-                The measured information can be displayed
-                to the user. When the battery reaches the
-                defined charging condition, the control
-                system can stop or disconnect the charging
-                path.
-            </p>
-
-            <p>
-                The temperature sensor provides additional
-                monitoring so that abnormal temperature
-                conditions can be detected.
-            </p>
-
-        </section>
-
-
-        <!-- CHARGING -->
-
-        <section class="detail-section">
-
-            <h2>
-                Lithium-Ion Charging
-            </h2>
-
-            <p>
-                A typical single-cell lithium-ion battery
-                uses a nominal voltage of approximately
-                3.7 V and is commonly charged to approximately
-                4.2 V using an appropriate constant-current/
-                constant-voltage charging method.
-            </p>
-
-            <p>
-                A suitable battery charging controller and
-                protection circuit should be used rather than
-                connecting a lithium-ion cell directly to a
-                power supply.
-            </p>
-
-        </section>
-
-
-        <!-- SAFETY -->
-
-        <section class="detail-section">
-
-            <h2>
-                Safety Considerations
-            </h2>
-
-            <p>
-                Lithium-ion batteries require appropriate
-                charging and protection circuitry. The charger
-                must be designed for the specific battery
-                chemistry, cell count and charging current.
-            </p>
-
-            <p>
-                Do not bypass the battery protection system
-                or charge a damaged or unsuitable battery.
-            </p>
-
-        </section>
-
-
-        <!-- FUTURE -->
-
-        <section class="detail-section">
-
-            <h2>
-                Future Improvements
-            </h2>
-
-            <ul>
-
-                <li>
-                    Add battery percentage estimation.
-                </li>
-
-                <li>
-                    Add audible warning indicators.
-                </li>
-
-                <li>
-                    Add data logging.
-                </li>
-
-                <li>
-                    Add mobile monitoring.
-                </li>
-
-                <li>
-                    Improve temperature protection.
-                </li>
-
-            </ul>
-
-        </section>
-
-
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            
+            <!-- Hardware Components Box -->
+            <div style="background: var(--card-bg, #fff); border: 1px solid var(--border-color, #e5e7eb); border-radius: 12px; padding: 20px;">
+                <h3>🛠️ Required Components</h3>
+                <ul style="line-height: 1.8; margin-top: 10px; padding-left: 20px;">
+                    <li>Arduino Uno / ATmega328P Microcontroller</li>
+                    <li>TP4056 Lithium Battery Charging Module</li>
+                    <li>0.96" I2C OLED Display</li>
+                    <li>5V Relay Module (Auto-Cut-Off switch)</li>
+                    <li>Voltage Divider Resistors & Current Sensor</li>
+                </ul>
+            </div>
+
+            <!-- Features & GitHub Box -->
+            <div style="background: var(--card-bg, #fff); border: 1px solid var(--border-color, #e5e7eb); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <h3>📌 Key Features</h3>
+                    <ul style="line-height: 1.8; margin-top: 10px; padding-left: 20px;">
+                        <li>Real-time battery voltage monitoring</li>
+                        <li>Automatic relay cut-off at 4.2V</li>
+                        <li>Visual status indicator on OLED screen</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/sulemanyunusabakura-jpg/MAGAZAWA-TECH-HUB" target="_blank" rel="noopener" class="submit-btn" style="display: inline-block; text-align: center; text-decoration: none; padding: 10px 20px; background: #0066cc; color: white; border-radius: 8px; font-weight: bold;">
+                        View Code on GitHub ↗
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </main>
 
-
-    <!-- =========================
-         CALL TO ACTION
-    ========================== -->
-
-    <section class="cta">
-
-        <h2>
-            Need Help With a Similar Project?
-        </h2>
-
-        <p>
-            Contact MAGAZAWA TECH HUB for project
-            guidance and technology support.
-        </p>
-
-        <a
-            href="../contact.html"
-            class="cta-button"
-        >
-            Contact Us
-        </a>
-
-    </section>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <p>
-            &copy; 2026 MAGAZAWA TECH HUB.
-            All Rights Reserved.
-        </p>
-
-        <p>
-            SULEMAN YUNUSA
-        </p>
-
-    </footer>
-
-
     <script src="../js/script.js"></script>
-
 </body>
-
 </html>
