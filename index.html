@@ -64,14 +64,23 @@
 
 <body>
 
-
-    <!-- =========================
-         NAVIGATION BAR
-    ========================== -->
-  <header class="navbar">
-
+<!-- =========================
+     NAVIGATION BAR WITH SEARCH & THEME
+========================== -->
+<header class="navbar">
     <div class="logo">
         MAGAZAWA TECH HUB
+    </div>
+
+    <!-- Search Overlay Box -->
+    <div class="nav-search-box">
+        <input 
+            type="text" 
+            id="navSearchInput" 
+            placeholder="Search projects, skills, courses..." 
+            aria-label="Search site"
+        >
+        <span class="search-icon">🔍</span>
     </div>
 
     <button
@@ -85,22 +94,18 @@
     </button>
 
     <nav id="mainNav">
-
         <a href="index.html">Home</a>
-
         <a href="projects.html">Projects</a>
-
         <a href="tutorials.html">Tutorials</a>
-
         <a href="courses.html">Courses</a>
-
         <a href="services.html">Services</a>
-
         <a href="contact.html">Contact</a>
-
+        <button id="themeToggleBtn" class="theme-toggle-btn" type="button">🌙 Dark</button>
     </nav>
-
 </header>
+
+    
+    
     <!-- =========================
          HERO SECTION
     ========================== -->
